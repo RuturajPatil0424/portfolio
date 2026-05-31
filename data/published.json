@@ -1,0 +1,190 @@
+{
+  "siteConfig": {
+    "title": "Ruturaj Patil | Python Full-Stack & AI/ML Developer",
+    "logoText": "RP",
+    "nav": [
+      { "id": "about", "label": "About", "visible": true, "order": 1 },
+      { "id": "experience", "label": "Experience", "visible": true, "order": 2 },
+      { "id": "skills", "label": "Skills", "visible": true, "order": 3 },
+      { "id": "projects", "label": "Projects", "visible": true, "order": 4 },
+      { "id": "github", "label": "GitHub", "visible": true, "order": 5 },
+      { "id": "blog", "label": "Blog", "visible": true, "order": 6 },
+      { "id": "contact", "label": "Contact Me", "visible": true, "order": 7, "cta": true }
+    ]
+  },
+  "hero": {
+    "visible": true,
+    "greeting": "Hello, I'm",
+    "name": "Ruturaj Patil",
+    "typewriter": ["Python Full-Stack Developer", "AI/ML Engineer", "RAG & LLM Specialist"],
+    "description": "Passionate Python Full-Stack Developer with expertise in scalable web applications, REST APIs, and AI-powered systems. I also build privacy-focused intelligent solutions using RAG architectures and local LLM integrations for real-world business problems.",
+    "cta": [
+      { "label": "View Projects", "href": "#projects", "variant": "primary" },
+      { "label": "Contact Me", "href": "#contact", "variant": "secondary" }
+    ],
+    "social": [
+      { "icon": "fab fa-linkedin-in", "url": "https://linkedin.com/in/ruturajpatil0424" },
+      { "icon": "fab fa-github", "url": "https://github.com/RuturajPatil0424" },
+      { "icon": "fas fa-envelope", "url": "mailto:ruturajpatil0424@gmail.com" }
+    ],
+    "badges": [
+      { "icon": "fas fa-brain", "text": "AI/ML + RAG", "className": "ai-card" },
+      { "icon": "fab fa-python", "text": "Python Full-Stack", "className": "dev-card" },
+      { "icon": "fas fa-server", "text": "Django, FastAPI & Flask", "className": "django-card" },
+      { "icon": "fas fa-robot", "text": "Local LLMs (Ollama)", "className": "ml-card" },
+      { "icon": "fas fa-database", "text": "PostgreSQL & MySQL", "className": "db-card" }
+    ]
+  },
+  "sections": [
+    {
+      "id": "about",
+      "visible": true,
+      "order": 1,
+      "labelNo": "01.",
+      "title": "About Me",
+      "overviewTitle": "Professional Overview",
+      "overviewParagraphs": [
+        "Hello! I'm Ruturaj Patil, a Python Full-Stack and AI/ML Developer passionate about building modern web applications and intelligent systems.",
+        "My expertise includes backend development using Python, Django, FastAPI, and Flask, API development, React frontend, PostgreSQL/MySQL, machine learning, and cloud deployment.",
+        "I specialize in RAG-based workflows and local LLM solutions, and I enjoy solving complex business problems through production-ready software engineering."
+      ],
+      "stats": [
+        { "value": "1 Year", "label": "Years Experience" },
+        { "value": "20+", "label": "Projects Delivered" }
+      ],
+      "education": [
+        {
+          "degree": "Bachelor of Engineering (B.E.) / B.Tech in Computer Science",
+          "org": "Dr. Babasaheb Ambedkar Technological University, Lonere",
+          "year": "2022 - 2025 | CGPA: 7.62",
+          "desc": "Final Project: Intelligent offline AI assistant with voice/text interaction, face-recognition login, and local data storage."
+        },
+        {
+          "degree": "Diploma in Computer Science & Engineering",
+          "org": "Sanjay Ghodawat Polytechnic, Kolhapur (MSBTE)",
+          "year": "2020 - 2022 | 81.71%",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "id": "experience",
+      "visible": true,
+      "order": 2,
+      "labelNo": "02.",
+      "title": "Experience",
+      "items": [
+        {
+          "role": "Trainee Python Developer",
+          "date": "March 2026",
+          "company": "Walstar Technologies Pvt Ltd | Kolhapur, India",
+          "tasks": [
+            "Developed scalable backend systems using Python and Django.",
+            "Built RESTful APIs for enterprise applications.",
+            "Designed PostgreSQL databases and optimized queries.",
+            "Implemented authentication and role-based access control.",
+            "Integrated third-party APIs and automation workflows.",
+            "Collaborated with frontend and QA teams.",
+            "Managed production deployments and monitoring.",
+            "Designed and built a live Virtual Clothes Try-On web application using Django."
+          ]
+        },
+        {
+          "role": "Software Engineering Intern",
+          "date": "May 2025 - Nov 2025",
+          "company": "Vinayak IT Solutions | Kolhapur, India",
+          "tasks": [
+            "Worked on Python full-stack development using Flask and Django.",
+            "Implemented backend business logic and REST APIs with MySQL integration.",
+            "Contributed to debugging, optimization, and production stability.",
+            "Collaborated with senior engineers to improve code quality and reliability."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "visible": true,
+      "order": 3,
+      "labelNo": "03.",
+      "title": "Technical Skills",
+      "categories": [
+        { "icon": "fas fa-server", "title": "Backend Development", "tags": ["Python", "Django", "FastAPI", "Flask", "REST APIs", "JWT Authentication"], "highlights": ["Python"] },
+        { "icon": "fas fa-laptop-code", "title": "Frontend Development", "tags": ["HTML5", "CSS3", "JavaScript", "React.js", "Bootstrap", "Tailwind CSS"], "highlights": [] },
+        { "icon": "fas fa-database", "title": "Database", "tags": ["PostgreSQL", "MySQL", "MongoDB", "SQLite", "Database Design", "Query Optimization"], "highlights": [] },
+        { "icon": "fas fa-brain", "title": "AI / Machine Learning", "tags": ["Scikit-Learn", "Pandas", "NumPy", "Matplotlib", "OpenAI APIs", "LangChain", "FAISS / ChromaDB", "Whisper", "Ollama", "RAG Systems"], "highlights": ["RAG Systems"] },
+        { "icon": "fas fa-cloud", "title": "DevOps & Cloud", "tags": ["Git", "GitHub", "Docker", "AWS", "Linux", "Nginx"], "highlights": [] }
+      ],
+      "certificationsTitle": "Certifications & Achievements",
+      "certifications": ["Python Programming", "PostgreSQL", "Machine Learning", "AWS Cloud", "Docker", "Data Structures & Algorithms", "Team Lead: Smart India Hackathon 2024", "Runner-up: Techfest 2K24 competition (200+ participants)", "The Ultimate Job Ready Data Science Course (Code with Harry)", "Artificial Intelligence Training (IIT Bombay, Mood Indigo)"]
+    },
+    { "id": "projects", "visible": true, "order": 4, "labelNo": "04.", "title": "Featured Projects" },
+    {
+      "id": "stats",
+      "visible": true,
+      "order": 5,
+      "labelNo": "05.",
+      "title": "Project Statistics",
+      "items": [
+        { "value": "20+", "label": "Projects Completed" },
+        { "value": "3+", "label": "Years Experience" },
+        { "value": "50K+", "label": "Lines of Code" },
+        { "value": "10+", "label": "Technologies Used" }
+      ]
+    },
+    {
+      "id": "github",
+      "visible": true,
+      "order": 6,
+      "labelNo": "06.",
+      "title": "GitHub Highlights",
+      "items": [
+        { "title": "Inventory Management System", "desc": "Language: Python | Stars: - | Last Updated: -", "url": "https://github.com/RuturajPatil0424" },
+        { "title": "AI Resume Screener", "desc": "Language: Python | Stars: - | Last Updated: -", "url": "https://github.com/RuturajPatil0424" },
+        { "title": "RAG Teaching Assistant", "desc": "Language: Python | Stars: - | Last Updated: -", "url": "https://github.com/RuturajPatil0424" },
+        { "title": "Virtual Clothes Try-On", "desc": "Language: Python | Stars: - | Last Updated: -", "url": "https://github.com/RuturajPatil0424" }
+      ]
+    },
+    {
+      "id": "blog",
+      "visible": true,
+      "order": 7,
+      "labelNo": "07.",
+      "title": "Blog Topics",
+      "topics": [
+        { "title": "Python", "items": ["Django Best Practices", "FastAPI vs Django", "PostgreSQL Optimization"] },
+        { "title": "AI", "items": ["Building RAG Applications", "LangChain Guide", "AI Agents"] },
+        { "title": "Career", "items": ["Python Developer Roadmap", "Full Stack Learning Journey", "AI Engineer Skills"] }
+      ]
+    }
+  ],
+  "projects": [
+    { "overline": "Enterprise App", "title": "Enterprise Inventory Management System", "desc": "Multi-branch inventory management platform with role-based access control, stock tracking, audit logs, notifications, and analytics dashboard.", "tech": ["Python", "Django", "React", "PostgreSQL", "Redis", "Docker"] },
+    { "overline": "AI Recruitment", "title": "AI Resume Screening Platform", "desc": "AI-powered recruitment system with resume parsing, skill extraction, candidate ranking, and job matching analytics.", "tech": ["Python", "FastAPI", "PostgreSQL", "React", "NLP"] },
+    { "overline": "Conversational AI", "title": "AI Customer Support Chatbot", "desc": "Enterprise chatbot trained on company documents using RAG architecture, PDF processing, contextual responses, and authenticated knowledge search.", "tech": ["Python", "LangChain", "OpenAI", "FastAPI", "PostgreSQL"] },
+    { "overline": "Finance App", "title": "Smart Expense Tracker", "desc": "Personal finance app featuring expense categorization, budget management, AI insights, and reports.", "tech": ["Django", "PostgreSQL", "React"] },
+    { "overline": "ML System", "title": "Predictive Maintenance System", "desc": "Machine learning system for real-time monitoring, failure prediction, automated alerts, and operational dashboards.", "tech": ["Python", "Scikit-Learn", "FastAPI", "PostgreSQL"] },
+    { "overline": "Live Web App", "title": "Virtual Clothes Try-On", "desc": "Developed a live interactive web app for virtual clothes try-on using user photo capture/upload and backend image processing workflows.", "tech": ["Django", "Python", "Web App"] },
+    { "overline": "AI Engine", "title": "RAG-Based AI Teaching Assistant", "desc": "Built a RAG assistant over educational video content using Whisper transcription and vector search for accurate context retrieval.", "tech": ["Python", "OpenAI API", "LangChain", "Pinecone / FAISS", "Whisper"] },
+    { "overline": "Mobile App", "title": "College Food Court App", "desc": "Designed and developed an Android app for online campus food ordering with a simple, student-friendly ordering flow.", "tech": ["Java", "Android Studio", "Firebase"] }
+  ],
+  "contact": {
+    "visible": true,
+    "overline": "What's Next?",
+    "title": "Get In Touch",
+    "description": "I am currently open to new opportunities as a Python Full-Stack Developer and AI/ML Engineer. Whether you have a project, role, or question, I will be happy to connect.",
+    "phone": "+91 84213 80331",
+    "location": "Kolhapur, Maharashtra, India",
+    "email": "ruturajpatil0424@gmail.com"
+  },
+  "footer": {
+    "visible": true,
+    "social": [
+      { "icon": "fab fa-linkedin-in", "url": "https://linkedin.com/in/ruturajpatil0424" },
+      { "icon": "fab fa-github", "url": "https://github.com/RuturajPatil0424" },
+      { "icon": "fas fa-envelope", "url": "mailto:ruturajpatil0424@gmail.com" }
+    ],
+    "line1": "Built with Vanilla HTML, CSS & JS.",
+    "line2": "© 2026 Ruturaj Patil. All rights reserved."
+  }
+}
