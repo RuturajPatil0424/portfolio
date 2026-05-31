@@ -4,6 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Details | Ruturaj Patil</title>
+  <script>
+    (function () {
+      var key = 'portfolio_theme_pref';
+      var pref = localStorage.getItem(key) || 'dark';
+      var isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var resolved = pref === 'dark' || pref === 'light' ? pref : (isDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', resolved);
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
@@ -17,6 +26,7 @@
       <div class="details-shell glass-panel reveal active">
         <div class="details-topbar">
           <a id="backToHomeBtn" class="btn btn-secondary btn-small" href="./index.html"><i class="fas fa-arrow-left"></i> Back to Home</a>
+          <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">Dark</button>
         </div>
         <div id="detailContent"></div>
       </div>

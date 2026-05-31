@@ -1,9 +1,47 @@
 document.addEventListener('DOMContentLoaded', async () => {
   const container = document.getElementById('detailContent');
   const backBtn = document.getElementById('backToHomeBtn');
+  const themeBtn = document.getElementById('themeToggle');
+  const THEME_KEY = 'portfolio_theme_pref';
+  const themeQuery = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+  let themePref = localStorage.getItem(THEME_KEY) || 'dark';
 
   function esc(s = '') {
     return String(s).replace(/[&<>"']/g, (m) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]));
+  }
+
+  function resolveTheme(pref) {
+    if (pref === 'dark' || pref === 'light') return pref;
+    return themeQuery && themeQuery.matches ? 'dark' : 'light';
+  }
+
+  function applyTheme(pref = themePref) {
+    const resolved = resolveTheme(pref);
+    document.documentElement.setAttribute('data-theme', resolved);
+    if (themeBtn) {
+      themeBtn.textContent = resolved === 'dark' ? '🌙 Dark' : '☀ Light';
+      themeBtn.setAttribute('aria-pressed', resolved === 'dark' ? 'true' : 'false');
+      themeBtn.setAttribute('title', `Switch to ${resolved === 'dark' ? 'light' : 'dark'} mode`);
+    }
+  }
+
+  function initThemeToggle() {
+    if (themeBtn) {
+      themeBtn.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+        const next = current === 'dark' ? 'light' : 'dark';
+        themePref = next;
+        localStorage.setItem(THEME_KEY, next);
+        applyTheme(next);
+      });
+    }
+    if (themeQuery && typeof themeQuery.addEventListener === 'function') {
+      themeQuery.addEventListener('change', () => {
+        themePref = localStorage.getItem(THEME_KEY) || 'dark';
+        if (themePref === 'system') applyTheme('system');
+      });
+    }
+    applyTheme(themePref);
   }
 
   function goHomeOrBack() {
@@ -20,6 +58,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       goHomeOrBack();
     });
   }
+
+  initThemeToggle();
 
   function fallback(title, message) {
     container.innerHTML = `

@@ -2,6 +2,47 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   let typewriterTexts = ["Python Full-Stack Developer", "AI/ML Engineer", "RAG & LLM Specialist"];
+  const THEME_KEY = 'portfolio_theme_pref';
+  const themeQuery = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+  let themePref = localStorage.getItem(THEME_KEY) || 'dark';
+
+  function resolveTheme(pref) {
+    if (pref === 'dark' || pref === 'light') return pref;
+    return themeQuery && themeQuery.matches ? 'dark' : 'light';
+  }
+
+  function applyTheme(pref = themePref) {
+    const resolved = resolveTheme(pref);
+    document.documentElement.setAttribute('data-theme', resolved);
+    const btn = document.getElementById('themeToggle');
+    if (btn) {
+      btn.textContent = resolved === 'dark' ? '🌙 Dark' : '☀ Light';
+      btn.setAttribute('aria-pressed', resolved === 'dark' ? 'true' : 'false');
+      btn.setAttribute('title', `Switch to ${resolved === 'dark' ? 'light' : 'dark'} mode`);
+    }
+  }
+
+  function initThemeToggle() {
+    const btn = document.getElementById('themeToggle');
+    if (btn) {
+      btn.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+        const next = current === 'dark' ? 'light' : 'dark';
+        themePref = next;
+        localStorage.setItem(THEME_KEY, next);
+        applyTheme(next);
+      });
+    }
+
+    if (themeQuery && typeof themeQuery.addEventListener === 'function') {
+      themeQuery.addEventListener('change', () => {
+        themePref = localStorage.getItem(THEME_KEY) || 'dark';
+        if (themePref === 'system') applyTheme('system');
+      });
+    }
+
+    applyTheme(themePref);
+  }
 
   function esc(s = '') {
     return String(s).replace(/[&<>"']/g, (m) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]));
@@ -360,6 +401,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   hydrateFromApi().finally(() => {
+    initThemeToggle();
     initInteractions();
     setTimeout(type, 1000);
   });

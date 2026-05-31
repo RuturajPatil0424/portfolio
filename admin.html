@@ -4,6 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio Admin</title>
+  <script>
+    (function () {
+      var key = 'portfolio_theme_pref';
+      var pref = localStorage.getItem(key) || 'dark';
+      var isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var resolved = pref === 'dark' || pref === 'light' ? pref : (isDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', resolved);
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -16,7 +25,10 @@
         <h1>Portfolio Admin</h1>
         <p>GUI editor for your portfolio content</p>
       </div>
-      <div id="authState" class="auth-state"></div>
+      <div class="header-actions">
+        <button id="themeToggle" class="theme-toggle-admin" type="button" aria-label="Toggle color theme" aria-pressed="false">Dark</button>
+        <div id="authState" class="auth-state"></div>
+      </div>
     </header>
 
     <section id="loginSection" class="panel login-panel">

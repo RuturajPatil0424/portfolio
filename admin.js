@@ -4,6 +4,9 @@ let mediaItems = [];
 let currentTab = 'site';
 
 const $ = (id) => document.getElementById(id);
+const THEME_KEY = 'portfolio_theme_pref';
+const themeQuery = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+let themePref = localStorage.getItem(THEME_KEY) || 'dark';
 
 const TABS = [
   { id: 'site', label: 'Site Config + Nav' },
@@ -15,6 +18,42 @@ const TABS = [
   { id: 'contact', label: 'Contact + Footer' },
   { id: 'media', label: 'Media Manager' }
 ];
+
+function resolveTheme(pref) {
+  if (pref === 'dark' || pref === 'light') return pref;
+  return themeQuery && themeQuery.matches ? 'dark' : 'light';
+}
+
+function applyTheme(pref = themePref) {
+  const resolved = resolveTheme(pref);
+  document.documentElement.setAttribute('data-theme', resolved);
+  const btn = $('themeToggle');
+  if (btn) {
+    btn.textContent = resolved === 'dark' ? '🌙 Dark' : '☀ Light';
+    btn.setAttribute('aria-pressed', resolved === 'dark' ? 'true' : 'false');
+    btn.setAttribute('title', `Switch to ${resolved === 'dark' ? 'light' : 'dark'} mode`);
+  }
+}
+
+function initThemeToggle() {
+  const btn = $('themeToggle');
+  if (btn) {
+    btn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      const next = current === 'dark' ? 'light' : 'dark';
+      themePref = next;
+      localStorage.setItem(THEME_KEY, next);
+      applyTheme(next);
+    });
+  }
+  if (themeQuery && typeof themeQuery.addEventListener === 'function') {
+    themeQuery.addEventListener('change', () => {
+      themePref = localStorage.getItem(THEME_KEY) || 'dark';
+      if (themePref === 'system') applyTheme('system');
+    });
+  }
+  applyTheme(themePref);
+}
 
 async function api(url, options = {}) {
   const res = await fetch(url, { credentials: 'include', ...options });
@@ -1027,3 +1066,5 @@ boot().catch((e) => {
   console.error(e);
   showToast(`Error: ${e.message}`, 'error');
 });
+
+initThemeToggle();

@@ -13,6 +13,20 @@
   --radius: 14px;
 }
 
+[data-theme="light"] {
+  --bg: #eef4ff;
+  --panel: #f9fbff;
+  --panel-2: #ffffff;
+  --line: #c8d6ee;
+  --line-soft: #d7e2f3;
+  --text: #11203c;
+  --muted: #4e6489;
+  --primary: #126ac9;
+  --green: #1f9950;
+  --amber: #c08424;
+  --red: #cc3b57;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -26,6 +40,13 @@ body {
     radial-gradient(circle at 12% 0%, rgba(61, 153, 255, 0.15), transparent 42%),
     radial-gradient(circle at 100% 100%, rgba(255, 82, 125, 0.1), transparent 35%),
     linear-gradient(150deg, #070b17, #0a1120 48%, #080d1a);
+}
+
+[data-theme="light"] body {
+  background:
+    radial-gradient(circle at 12% 0%, rgba(18, 106, 201, 0.1), transparent 42%),
+    radial-gradient(circle at 100% 100%, rgba(204, 59, 87, 0.08), transparent 35%),
+    linear-gradient(150deg, #f4f8ff, #edf4ff 48%, #e9f1ff);
 }
 
 h1, h2, h3, h4 {
@@ -85,6 +106,12 @@ body.auth-guest .action-bar {
   gap: 16px;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .auth-state {
   font-size: 0.92rem;
   color: var(--muted);
@@ -92,6 +119,21 @@ body.auth-guest .action-bar {
   border: 1px solid var(--line);
   border-radius: 999px;
   padding: 8px 14px;
+}
+
+.theme-toggle-admin {
+  border: 1px solid var(--line);
+  background: var(--panel-2);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 0.84rem;
+  cursor: pointer;
+}
+
+.theme-toggle-admin:hover {
+  border-color: var(--primary);
 }
 
 .panel {
@@ -410,6 +452,35 @@ button:focus {
   border-color: rgba(255, 95, 121, 0.5);
 }
 
+[data-theme="light"] .auth-state {
+  background: #f3f8ff;
+}
+
+[data-theme="light"] .panel {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(245, 250, 255, 0.95));
+  box-shadow: 0 12px 30px rgba(21, 54, 102, 0.1);
+}
+
+[data-theme="light"] input,
+[data-theme="light"] textarea,
+[data-theme="light"] select,
+[data-theme="light"] .tab-btn,
+[data-theme="light"] .btn,
+[data-theme="light"] .array-item,
+[data-theme="light"] .group,
+[data-theme="light"] .toast {
+  background: #ffffff;
+}
+
+[data-theme="light"] .btn {
+  border-color: var(--line);
+}
+
+[data-theme="light"] .form-errors {
+  background: rgba(204, 59, 87, 0.08);
+  color: #7c1f33;
+}
+
 @media (max-width: 1040px) {
   .admin-grid {
     grid-template-columns: 1fr;
@@ -423,6 +494,10 @@ button:focus {
 @media (max-width: 680px) {
   .admin-shell {
     padding: 14px;
+  }
+  .header-actions {
+    width: 100%;
+    justify-content: space-between;
   }
   body.auth-guest .admin-header {
     margin-top: 28px;
