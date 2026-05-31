@@ -16,6 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
   }
 
+  function detailUrl(type, id) {
+    return `details.html?type=${encodeURIComponent(type)}&id=${encodeURIComponent(id || '')}`;
+  }
+
   function renderPublished(data) {
     if (!data || typeof data !== 'object') return;
 
@@ -136,7 +140,18 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
           <div class="certifications glass-panel reveal mt-4">
             <h3><i class="fas fa-certificate"></i> ${esc(skills.certificationsTitle || 'Certifications')}</h3>
-            <ul class="task-list two-cols">${(skills.certifications || []).map((c) => `<li>${esc(c)}</li>`).join('')}</ul>
+            <div class="cert-grid">
+              ${(data.certificates || []).map((c) => `
+                <article class="cert-card">
+                  <p class="project-overline">${esc(c.issuer || 'Certification')}</p>
+                  <h4>${esc(c.title || '')}</h4>
+                  <p class="cert-short">${esc(c.description || '')}</p>
+                  <div class="project-links">
+                    <a class="btn btn-secondary btn-small" href="${detailUrl('certificate', c.id)}">View</a>
+                  </div>
+                </article>
+              `).join('')}
+            </div>
           </div>
         `);
       }
@@ -155,6 +170,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h3 class="project-title">${esc(p.title || '')}</h3>
                 <div class="project-desc"><p>${esc(p.desc || '')}</p></div>
                 <ul class="project-tech">${(p.tech || []).map((t) => `<li>${esc(t)}</li>`).join('')}</ul>
+                <div class="project-links">
+                  <a class="btn btn-secondary btn-small" href="${detailUrl('project', p.id)}">View</a>
+                </div>
               </div></div>
             `).join('')}
           </div>
@@ -186,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <div class="project-card glass-panel reveal">
                 <h3 class="project-title">${esc(g.title || '')}</h3>
                 <p class="project-desc">${esc(g.desc || '')}</p>
-                <div class="project-links"><a href="${esc(g.url || '#')}" target="_blank"><i class="fab fa-github"></i> View</a></div>
+                <div class="project-links"><a class="btn btn-secondary btn-small" href="${esc(g.url || '#')}" target="_blank">View</a></div>
               </div>
             `).join('')}
           </div>
@@ -247,11 +265,23 @@ document.addEventListener('DOMContentLoaded', () => {
   async function hydrateFromApi() {
     try {
       const res = await fetch('/api/content/published');
-      if (!res.ok) return;
+      if (!res.ok) throw new Error('Published API unavailable');
       const data = await res.json();
       renderPublished(data);
-    } catch (_) {
-      // fallback: keep static HTML
+      return;
+    } catch (apiErr) {
+      try {
+        const res = await fetch('./data/published.json');
+        if (!res.ok) throw new Error('Local JSON unavailable');
+        const data = await res.json();
+        renderPublished(data);
+      } catch (localErr) {
+        console.warn('Unable to hydrate published content from API and local JSON.', {
+          apiError: apiErr?.message || apiErr,
+          localError: localErr?.message || localErr
+        });
+        // fallback: keep static HTML
+      }
     }
   }
 

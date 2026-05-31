@@ -4,63 +4,72 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="admin.css" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Portfolio Admin Panel</h1>
-      <div id="authState"></div>
+  <div class="admin-shell">
+    <header class="admin-header">
+      <div>
+        <h1>Portfolio Admin</h1>
+        <p>GUI editor for your portfolio content</p>
+      </div>
+      <div id="authState" class="auth-state"></div>
     </header>
 
-    <section id="loginSection" class="card">
-      <h2>Login</h2>
+    <section id="loginSection" class="panel login-panel">
+      <h2>Admin Login</h2>
+      <p class="login-note">Sign in with your admin credentials to manage portfolio content.</p>
       <form id="loginForm">
-        <input name="username" placeholder="Username" required />
-        <input name="password" placeholder="Password" type="password" required />
-        <button type="submit">Login</button>
+        <label>
+          Username
+          <input name="username" placeholder="Enter username" required />
+        </label>
+        <label>
+          Password
+          <input name="password" placeholder="Enter password" type="password" required />
+        </label>
+        <button type="submit" class="btn btn-primary">Login</button>
       </form>
     </section>
 
     <section id="adminSection" class="hidden">
-      <div class="toolbar card">
-        <button id="refreshBtn">Refresh Draft</button>
-        <button id="saveBtn">Save Draft</button>
-        <button id="publishBtn">Publish</button>
-        <button id="resetBtn">Reset Draft = Published</button>
-        <button id="logoutBtn" class="danger">Logout</button>
-      </div>
-
-      <div class="grid">
-        <div class="card">
-          <h2>Section Visibility + Order + Label</h2>
-          <div id="sectionsEditor"></div>
-          <button id="applySectionBtn">Apply Section Changes</button>
+      <div class="panel action-bar">
+        <div class="actions-left">
+          <button id="refreshBtn" class="btn">Refresh</button>
+          <button id="saveBtn" class="btn btn-primary" disabled>Save Draft</button>
+          <button id="publishBtn" class="btn btn-success">Publish</button>
+          <button id="resetBtn" class="btn btn-warning">Reset Draft</button>
         </div>
-
-        <div class="card">
-          <h2>Media Manager</h2>
-          <form id="uploadForm">
-            <input type="file" name="file" required />
-            <button type="submit">Upload</button>
-          </form>
-          <div id="mediaList"></div>
+        <div class="actions-right">
+          <span id="dirtyBadge" class="status clean">Saved</span>
+          <button id="logoutBtn" class="btn btn-danger">Logout</button>
         </div>
       </div>
 
-      <section class="card">
-        <h2>Full JSON Content Editor (All Data)</h2>
-        <p>Edit anything here: labels, text, arrays, items, sections, order, and more.</p>
-        <textarea id="jsonEditor"></textarea>
-      </section>
+      <div class="admin-grid">
+        <aside class="panel side-nav">
+          <h3>Content Sections</h3>
+          <nav id="tabNav" class="tab-nav"></nav>
+        </aside>
 
-      <section class="card">
-        <h2>Quick API</h2>
+        <main class="panel workspace-panel">
+          <div id="formErrors" class="form-errors hidden"></div>
+          <div id="workspace"></div>
+        </main>
+      </div>
+
+      <section class="panel quick-links">
+        <h3>Quick Links</h3>
         <p>Public data: <a href="/api/content/published" target="_blank">/api/content/published</a></p>
         <p>Admin page: <a href="/admin" target="_blank">/admin</a></p>
       </section>
     </section>
   </div>
+
+  <div id="toastStack" class="toast-stack" aria-live="polite"></div>
   <script src="admin.js"></script>
 </body>
 </html>

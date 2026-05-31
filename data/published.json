@@ -3,36 +3,113 @@
     "title": "Ruturaj Patil | Python Full-Stack & AI/ML Developer",
     "logoText": "RP",
     "nav": [
-      { "id": "about", "label": "About", "visible": true, "order": 1 },
-      { "id": "experience", "label": "Experience", "visible": true, "order": 2 },
-      { "id": "skills", "label": "Skills", "visible": true, "order": 3 },
-      { "id": "projects", "label": "Projects", "visible": true, "order": 4 },
-      { "id": "github", "label": "GitHub", "visible": true, "order": 5 },
-      { "id": "blog", "label": "Blog", "visible": true, "order": 6 },
-      { "id": "contact", "label": "Contact Me", "visible": true, "order": 7, "cta": true }
+      {
+        "id": "about",
+        "label": "About",
+        "visible": true,
+        "order": 1
+      },
+      {
+        "id": "experience",
+        "label": "Experience",
+        "visible": true,
+        "order": 2
+      },
+      {
+        "id": "skills",
+        "label": "Skills",
+        "visible": true,
+        "order": 3
+      },
+      {
+        "id": "projects",
+        "label": "Projects",
+        "visible": true,
+        "order": 4
+      },
+      {
+        "id": "github",
+        "label": "GitHub",
+        "visible": true,
+        "order": 5
+      },
+      {
+        "id": "blog",
+        "label": "Blog",
+        "visible": true,
+        "order": 6
+      },
+      {
+        "id": "contact",
+        "label": "Contact Me",
+        "visible": true,
+        "order": 7,
+        "cta": true
+      }
     ]
   },
   "hero": {
     "visible": true,
     "greeting": "Hello, I'm",
     "name": "Ruturaj Patil",
-    "typewriter": ["Python Full-Stack Developer", "AI/ML Engineer", "RAG & LLM Specialist"],
+    "typewriter": [
+      "Python Full-Stack Developer",
+      "AI/ML Engineer",
+      "RAG & LLM Specialist"
+    ],
     "description": "Passionate Python Full-Stack Developer with expertise in scalable web applications, REST APIs, and AI-powered systems. I also build privacy-focused intelligent solutions using RAG architectures and local LLM integrations for real-world business problems.",
     "cta": [
-      { "label": "View Projects", "href": "#projects", "variant": "primary" },
-      { "label": "Contact Me", "href": "#contact", "variant": "secondary" }
+      {
+        "label": "View Projects",
+        "href": "#projects",
+        "variant": "primary"
+      },
+      {
+        "label": "Contact Me",
+        "href": "#contact",
+        "variant": "secondary"
+      }
     ],
     "social": [
-      { "icon": "fab fa-linkedin-in", "url": "https://linkedin.com/in/ruturajpatil0424" },
-      { "icon": "fab fa-github", "url": "https://github.com/RuturajPatil0424" },
-      { "icon": "fas fa-envelope", "url": "mailto:ruturajpatil0424@gmail.com" }
+      {
+        "icon": "fab fa-linkedin-in",
+        "url": "https://linkedin.com/in/ruturajpatil0424"
+      },
+      {
+        "icon": "fab fa-github",
+        "url": "https://github.com/RuturajPatil0424"
+      },
+      {
+        "icon": "fas fa-envelope",
+        "url": "mailto:ruturajpatil0424@gmail.com"
+      }
     ],
     "badges": [
-      { "icon": "fas fa-brain", "text": "AI/ML + RAG", "className": "ai-card" },
-      { "icon": "fab fa-python", "text": "Python Full-Stack", "className": "dev-card" },
-      { "icon": "fas fa-server", "text": "Django, FastAPI & Flask", "className": "django-card" },
-      { "icon": "fas fa-robot", "text": "Local LLMs (Ollama)", "className": "ml-card" },
-      { "icon": "fas fa-database", "text": "PostgreSQL & MySQL", "className": "db-card" }
+      {
+        "icon": "fas fa-brain",
+        "text": "AI/ML + RAG",
+        "className": "ai-card"
+      },
+      {
+        "icon": "fab fa-python",
+        "text": "Python Full-Stack",
+        "className": "dev-card"
+      },
+      {
+        "icon": "fas fa-server",
+        "text": "Django, FastAPI & Flask",
+        "className": "django-card"
+      },
+      {
+        "icon": "fas fa-robot",
+        "text": "Local LLMs (Ollama)",
+        "className": "ml-card"
+      },
+      {
+        "icon": "fas fa-database",
+        "text": "PostgreSQL & MySQL",
+        "className": "db-card"
+      }
     ]
   },
   "sections": [
@@ -49,8 +126,14 @@
         "I specialize in RAG-based workflows and local LLM solutions, and I enjoy solving complex business problems through production-ready software engineering."
       ],
       "stats": [
-        { "value": "1 Year", "label": "Years Experience" },
-        { "value": "20+", "label": "Projects Delivered" }
+        {
+          "value": "1 Year",
+          "label": "Years Experience"
+        },
+        {
+          "value": "20+",
+          "label": "Projects Delivered"
+        }
       ],
       "education": [
         {
@@ -109,16 +192,101 @@
       "labelNo": "03.",
       "title": "Technical Skills",
       "categories": [
-        { "icon": "fas fa-server", "title": "Backend Development", "tags": ["Python", "Django", "FastAPI", "Flask", "REST APIs", "JWT Authentication"], "highlights": ["Python"] },
-        { "icon": "fas fa-laptop-code", "title": "Frontend Development", "tags": ["HTML5", "CSS3", "JavaScript", "React.js", "Bootstrap", "Tailwind CSS"], "highlights": [] },
-        { "icon": "fas fa-database", "title": "Database", "tags": ["PostgreSQL", "MySQL", "MongoDB", "SQLite", "Database Design", "Query Optimization"], "highlights": [] },
-        { "icon": "fas fa-brain", "title": "AI / Machine Learning", "tags": ["Scikit-Learn", "Pandas", "NumPy", "Matplotlib", "OpenAI APIs", "LangChain", "FAISS / ChromaDB", "Whisper", "Ollama", "RAG Systems"], "highlights": ["RAG Systems"] },
-        { "icon": "fas fa-cloud", "title": "DevOps & Cloud", "tags": ["Git", "GitHub", "Docker", "AWS", "Linux", "Nginx"], "highlights": [] }
+        {
+          "icon": "fas fa-server",
+          "title": "Backend Development",
+          "tags": [
+            "Python",
+            "Django",
+            "FastAPI",
+            "Flask",
+            "REST APIs",
+            "JWT Authentication"
+          ],
+          "highlights": [
+            "Python"
+          ]
+        },
+        {
+          "icon": "fas fa-laptop-code",
+          "title": "Frontend Development",
+          "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "React.js",
+            "Bootstrap",
+            "Tailwind CSS"
+          ],
+          "highlights": []
+        },
+        {
+          "icon": "fas fa-database",
+          "title": "Database",
+          "tags": [
+            "PostgreSQL",
+            "MySQL",
+            "MongoDB",
+            "SQLite",
+            "Database Design",
+            "Query Optimization"
+          ],
+          "highlights": []
+        },
+        {
+          "icon": "fas fa-brain",
+          "title": "AI / Machine Learning",
+          "tags": [
+            "Scikit-Learn",
+            "Pandas",
+            "NumPy",
+            "Matplotlib",
+            "OpenAI APIs",
+            "LangChain",
+            "FAISS / ChromaDB",
+            "Whisper",
+            "Ollama",
+            "RAG Systems"
+          ],
+          "highlights": [
+            "RAG Systems"
+          ]
+        },
+        {
+          "icon": "fas fa-cloud",
+          "title": "DevOps & Cloud",
+          "tags": [
+            "Git",
+            "GitHub",
+            "Docker",
+            "AWS",
+            "Linux",
+            "Nginx"
+          ],
+          "highlights": []
+        }
       ],
       "certificationsTitle": "Certifications & Achievements",
-      "certifications": ["Python Programming", "PostgreSQL", "Machine Learning", "AWS Cloud", "Docker", "Data Structures & Algorithms", "Team Lead: Smart India Hackathon 2024", "Runner-up: Techfest 2K24 competition (200+ participants)", "The Ultimate Job Ready Data Science Course (Code with Harry)", "Artificial Intelligence Training (IIT Bombay, Mood Indigo)"]
+      "certifications": [
+        "Python Programming",
+        "PostgreSQL",
+        "Machine Learning",
+        "AWS Cloud",
+        "Docker",
+        "Data Structures & Algorithms",
+        "Team Lead: Smart India Hackathon 2024",
+        "Runner-up: Techfest 2K24 competition (200+ participants)",
+        "The Ultimate Job Ready Data Science Course (Code with Harry)",
+        "Artificial Intelligence Training (IIT Bombay, Mood Indigo)"
+      ]
     },
-    { "id": "projects", "visible": true, "order": 4, "labelNo": "04.", "title": "Featured Projects" },
+    {
+      "id": "projects",
+      "visible": true,
+      "order": 4,
+      "labelNo": "04.",
+      "title": "Featured Projects"
+    },
     {
       "id": "stats",
       "visible": true,
@@ -126,10 +294,22 @@
       "labelNo": "05.",
       "title": "Project Statistics",
       "items": [
-        { "value": "20+", "label": "Projects Completed" },
-        { "value": "3+", "label": "Years Experience" },
-        { "value": "50K+", "label": "Lines of Code" },
-        { "value": "10+", "label": "Technologies Used" }
+        {
+          "value": "20+",
+          "label": "Projects Completed"
+        },
+        {
+          "value": "3+",
+          "label": "Years Experience"
+        },
+        {
+          "value": "50K+",
+          "label": "Lines of Code"
+        },
+        {
+          "value": "10+",
+          "label": "Technologies Used"
+        }
       ]
     },
     {
@@ -139,10 +319,26 @@
       "labelNo": "06.",
       "title": "GitHub Highlights",
       "items": [
-        { "title": "Inventory Management System", "desc": "Language: Python | Stars: - | Last Updated: -", "url": "https://github.com/RuturajPatil0424" },
-        { "title": "AI Resume Screener", "desc": "Language: Python | Stars: - | Last Updated: -", "url": "https://github.com/RuturajPatil0424" },
-        { "title": "RAG Teaching Assistant", "desc": "Language: Python | Stars: - | Last Updated: -", "url": "https://github.com/RuturajPatil0424" },
-        { "title": "Virtual Clothes Try-On", "desc": "Language: Python | Stars: - | Last Updated: -", "url": "https://github.com/RuturajPatil0424" }
+        {
+          "title": "Inventory Management System",
+          "desc": "Language: Python | Stars: - | Last Updated: -",
+          "url": "https://github.com/RuturajPatil0424"
+        },
+        {
+          "title": "AI Resume Screener",
+          "desc": "Language: Python | Stars: - | Last Updated: -",
+          "url": "https://github.com/RuturajPatil0424"
+        },
+        {
+          "title": "RAG Teaching Assistant",
+          "desc": "Language: Python | Stars: - | Last Updated: -",
+          "url": "https://github.com/RuturajPatil0424"
+        },
+        {
+          "title": "Virtual Clothes Try-On",
+          "desc": "Language: Python | Stars: - | Last Updated: -",
+          "url": "https://github.com/RuturajPatil0424"
+        }
       ]
     },
     {
@@ -152,21 +348,252 @@
       "labelNo": "07.",
       "title": "Blog Topics",
       "topics": [
-        { "title": "Python", "items": ["Django Best Practices", "FastAPI vs Django", "PostgreSQL Optimization"] },
-        { "title": "AI", "items": ["Building RAG Applications", "LangChain Guide", "AI Agents"] },
-        { "title": "Career", "items": ["Python Developer Roadmap", "Full Stack Learning Journey", "AI Engineer Skills"] }
+        {
+          "title": "Python",
+          "items": [
+            "Django Best Practices",
+            "FastAPI vs Django",
+            "PostgreSQL Optimization"
+          ]
+        },
+        {
+          "title": "AI",
+          "items": [
+            "Building RAG Applications",
+            "LangChain Guide",
+            "AI Agents"
+          ]
+        },
+        {
+          "title": "Career",
+          "items": [
+            "Python Developer Roadmap",
+            "Full Stack Learning Journey",
+            "AI Engineer Skills"
+          ]
+        }
       ]
     }
   ],
   "projects": [
-    { "overline": "Enterprise App", "title": "Enterprise Inventory Management System", "desc": "Multi-branch inventory management platform with role-based access control, stock tracking, audit logs, notifications, and analytics dashboard.", "tech": ["Python", "Django", "React", "PostgreSQL", "Redis", "Docker"] },
-    { "overline": "AI Recruitment", "title": "AI Resume Screening Platform", "desc": "AI-powered recruitment system with resume parsing, skill extraction, candidate ranking, and job matching analytics.", "tech": ["Python", "FastAPI", "PostgreSQL", "React", "NLP"] },
-    { "overline": "Conversational AI", "title": "AI Customer Support Chatbot", "desc": "Enterprise chatbot trained on company documents using RAG architecture, PDF processing, contextual responses, and authenticated knowledge search.", "tech": ["Python", "LangChain", "OpenAI", "FastAPI", "PostgreSQL"] },
-    { "overline": "Finance App", "title": "Smart Expense Tracker", "desc": "Personal finance app featuring expense categorization, budget management, AI insights, and reports.", "tech": ["Django", "PostgreSQL", "React"] },
-    { "overline": "ML System", "title": "Predictive Maintenance System", "desc": "Machine learning system for real-time monitoring, failure prediction, automated alerts, and operational dashboards.", "tech": ["Python", "Scikit-Learn", "FastAPI", "PostgreSQL"] },
-    { "overline": "Live Web App", "title": "Virtual Clothes Try-On", "desc": "Developed a live interactive web app for virtual clothes try-on using user photo capture/upload and backend image processing workflows.", "tech": ["Django", "Python", "Web App"] },
-    { "overline": "AI Engine", "title": "RAG-Based AI Teaching Assistant", "desc": "Built a RAG assistant over educational video content using Whisper transcription and vector search for accurate context retrieval.", "tech": ["Python", "OpenAI API", "LangChain", "Pinecone / FAISS", "Whisper"] },
-    { "overline": "Mobile App", "title": "College Food Court App", "desc": "Designed and developed an Android app for online campus food ordering with a simple, student-friendly ordering flow.", "tech": ["Java", "Android Studio", "Firebase"] }
+    {
+      "overline": "Enterprise App",
+      "title": "Enterprise Inventory Management System",
+      "desc": "Multi-branch inventory management platform with role-based access control, stock tracking, audit logs, notifications, and analytics dashboard.",
+      "tech": [
+        "Python",
+        "Django",
+        "React",
+        "PostgreSQL",
+        "Redis",
+        "Docker"
+      ],
+      "id": "enterprise-inventory-management-system",
+      "role": "Full-Stack Python Developer",
+      "features": [
+        "Role-based access for admins and branch managers",
+        "Live stock tracking with audit logs",
+        "Automated low-stock alerts and reporting"
+      ],
+      "outcomes": [
+        "Reduced manual stock reconciliation effort",
+        "Improved branch-level inventory visibility"
+      ],
+      "repoUrl": "https://github.com/RuturajPatil0424",
+      "liveUrl": "",
+      "gallery": [
+        "/uploads/Ruturaj_Patil_Training_Completion.jpg"
+      ]
+    },
+    {
+      "overline": "AI Recruitment",
+      "title": "AI Resume Screening Platform",
+      "desc": "AI-powered recruitment system with resume parsing, skill extraction, candidate ranking, and job matching analytics.",
+      "tech": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "React",
+        "NLP"
+      ],
+      "id": "ai-resume-screening-platform",
+      "role": "Backend + AI Integration Developer",
+      "features": [
+        "Resume parsing and skill extraction pipeline",
+        "Candidate ranking by JD matching score",
+        "Recruiter-friendly analytics dashboard"
+      ],
+      "outcomes": [
+        "Faster shortlist generation",
+        "Consistent and transparent screening process"
+      ],
+      "repoUrl": "https://github.com/RuturajPatil0424",
+      "liveUrl": "",
+      "gallery": [
+        "/uploads/Ruturaj_Patil_Training_Completion.jpg"
+      ]
+    },
+    {
+      "overline": "Conversational AI",
+      "title": "AI Customer Support Chatbot",
+      "desc": "Enterprise chatbot trained on company documents using RAG architecture, PDF processing, contextual responses, and authenticated knowledge search.",
+      "tech": [
+        "Python",
+        "LangChain",
+        "OpenAI",
+        "FastAPI",
+        "PostgreSQL"
+      ],
+      "id": "ai-customer-support-chatbot",
+      "role": "AI/ML Engineer",
+      "features": [
+        "RAG pipeline over enterprise documents",
+        "Secure contextual Q&A with source grounding",
+        "PDF ingestion and chunked vector search"
+      ],
+      "outcomes": [
+        "Reduced repeated support queries",
+        "Improved response consistency for common issues"
+      ],
+      "repoUrl": "https://github.com/RuturajPatil0424",
+      "liveUrl": "",
+      "gallery": [
+        "/uploads/Ruturaj_Patil_Training_Completion.jpg"
+      ]
+    },
+    {
+      "overline": "Finance App",
+      "title": "Smart Expense Tracker",
+      "desc": "Personal finance app featuring expense categorization, budget management, AI insights, and reports.",
+      "tech": [
+        "Django",
+        "PostgreSQL",
+        "React"
+      ],
+      "id": "smart-expense-tracker",
+      "role": "Full-Stack Developer",
+      "features": [
+        "Expense categorization and budget limits",
+        "Monthly analytics and trends",
+        "Insight-based spending suggestions"
+      ],
+      "outcomes": [
+        "Better budget tracking for users",
+        "Simplified monthly financial reviews"
+      ],
+      "repoUrl": "https://github.com/RuturajPatil0424",
+      "liveUrl": "",
+      "gallery": [
+        "/uploads/Ruturaj_Patil_Training_Completion.jpg"
+      ]
+    },
+    {
+      "overline": "ML System",
+      "title": "Predictive Maintenance System",
+      "desc": "Machine learning system for real-time monitoring, failure prediction, automated alerts, and operational dashboards.",
+      "tech": [
+        "Python",
+        "Scikit-Learn",
+        "FastAPI",
+        "PostgreSQL"
+      ],
+      "id": "predictive-maintenance-system",
+      "role": "ML Engineer",
+      "features": [
+        "Sensor-based failure prediction model",
+        "Alerting for high-risk machine states",
+        "Operational performance dashboard"
+      ],
+      "outcomes": [
+        "Earlier failure detection",
+        "Lower unplanned downtime risk"
+      ],
+      "repoUrl": "https://github.com/RuturajPatil0424",
+      "liveUrl": "",
+      "gallery": [
+        "/uploads/Ruturaj_Patil_Training_Completion.jpg"
+      ]
+    },
+    {
+      "overline": "Live Web App",
+      "title": "Virtual Clothes Try-On",
+      "desc": "Developed a live interactive web app for virtual clothes try-on using user photo capture/upload and backend image processing workflows.",
+      "tech": [
+        "Django",
+        "Python",
+        "Web App"
+      ],
+      "id": "virtual-clothes-try-on",
+      "role": "Django Developer",
+      "features": [
+        "User photo upload/capture workflow",
+        "Image processing driven virtual fitting",
+        "Interactive preview for multiple outfits"
+      ],
+      "outcomes": [
+        "Higher user engagement with visual try-on",
+        "Improved product exploration experience"
+      ],
+      "repoUrl": "https://github.com/RuturajPatil0424",
+      "liveUrl": "",
+      "gallery": [
+        "/uploads/Ruturaj_Patil_Training_Completion.jpg"
+      ]
+    },
+    {
+      "overline": "AI Engine",
+      "title": "RAG-Based AI Teaching Assistant",
+      "desc": "Built a RAG assistant over educational video content using Whisper transcription and vector search for accurate context retrieval.",
+      "tech": [
+        "Python",
+        "OpenAI API",
+        "LangChain",
+        "Pinecone / FAISS",
+        "Whisper"
+      ],
+      "id": "rag-based-ai-teaching-assistant",
+      "role": "RAG System Builder",
+      "features": [
+        "Whisper-based video transcription pipeline",
+        "Vector search for context retrieval",
+        "Question answering with source-grounded responses"
+      ],
+      "outcomes": [
+        "Faster learning support from long lectures",
+        "Improved retrieval quality for topic-specific queries"
+      ],
+      "repoUrl": "https://github.com/RuturajPatil0424",
+      "liveUrl": "",
+      "gallery": [
+        "/uploads/Ruturaj_Patil_Training_Completion.jpg"
+      ]
+    },
+    {
+      "overline": "Mobile App",
+      "title": "College Food Court App",
+      "desc": "Designed and developed an Android app for online campus food ordering with a simple, student-friendly ordering flow.",
+      "tech": [
+        "Java",
+        "Android Studio",
+        "Firebase"
+      ],
+      "id": "college-food-court-app",
+      "role": "Android App Developer",
+      "features": [
+        "Menu browsing and simple order placement",
+        "Student-friendly order flow",
+        "Firebase-backed data sync"
+      ],
+      "outcomes": [
+        "Simplified on-campus food ordering",
+        "Reduced manual ordering friction"
+      ],
+      "repoUrl": "https://github.com/RuturajPatil0424",
+      "liveUrl": "",
+      "gallery": [
+        "/uploads/Ruturaj_Patil_Training_Completion.jpg"
+      ]
+    }
   ],
   "contact": {
     "visible": true,
@@ -180,11 +607,104 @@
   "footer": {
     "visible": true,
     "social": [
-      { "icon": "fab fa-linkedin-in", "url": "https://linkedin.com/in/ruturajpatil0424" },
-      { "icon": "fab fa-github", "url": "https://github.com/RuturajPatil0424" },
-      { "icon": "fas fa-envelope", "url": "mailto:ruturajpatil0424@gmail.com" }
+      {
+        "icon": "fab fa-linkedin-in",
+        "url": "https://linkedin.com/in/ruturajpatil0424"
+      },
+      {
+        "icon": "fab fa-github",
+        "url": "https://github.com/RuturajPatil0424"
+      },
+      {
+        "icon": "fas fa-envelope",
+        "url": "mailto:ruturajpatil0424@gmail.com"
+      }
     ],
     "line1": "Built with Vanilla HTML, CSS & JS.",
-    "line2": "© 2026 Ruturaj Patil. All rights reserved."
-  }
+    "line2": "ï¿½ 2026 Ruturaj Patil. All rights reserved."
+  },
+  "certificates": [
+    {
+      "id": "ai-training-iitb-2023",
+      "title": "Artificial Intelligence Training Completion",
+      "issuer": "Acmegrade x Mood Indigo IIT Bombay",
+      "issueDate": "2023-12-14",
+      "credentialId": "AGC2023110272",
+      "skills": [
+        "Artificial Intelligence",
+        "Applied Learning",
+        "Project Exposure"
+      ],
+      "fileUrl": "/uploads/Ruturaj_Patil_Training_Completion.jpg",
+      "previewType": "image",
+      "thumbUrl": "/uploads/Ruturaj_Patil_Training_Completion.jpg",
+      "description": "Completed a structured AI training program focused on practical AI fundamentals and implementation."
+    },
+    {
+      "id": "udemy-ml-certificate",
+      "title": "Machine Learning Certification",
+      "issuer": "Udemy",
+      "issueDate": "2025-01-01",
+      "credentialId": "UC-7d140200-3a16-450c-bc24-c3e030f10808",
+      "skills": [
+        "Machine Learning",
+        "Model Building",
+        "Data Analysis"
+      ],
+      "fileUrl": "/uploads/UC-7d140200-3a16-450c-bc24-c3e030f10808.pdf",
+      "previewType": "pdf",
+      "thumbUrl": "",
+      "description": "Certificate validating applied machine learning concepts and model development workflow."
+    },
+    {
+      "id": "python-bootcamp-2025",
+      "title": "Complete 2025 Python Bootcamp: Learn Python from Scratch",
+      "issuer": "Udemy",
+      "issueDate": "2025-01-01",
+      "credentialId": "Python-Bootcamp-2025",
+      "skills": [
+        "Python",
+        "Programming Fundamentals",
+        "Problem Solving"
+      ],
+      "fileUrl": "/uploads/English_Complete_2025_Python_Bootcamp_Learn_Python_from_Scratch_Certificate.pdf",
+      "previewType": "pdf",
+      "thumbUrl": "",
+      "description": "Comprehensive Python bootcamp covering beginner to intermediate programming concepts."
+    },
+    {
+      "id": "ultimate-web-dev-2025",
+      "title": "Ultimate Web Development Course 2025 - Build Modern Websites",
+      "issuer": "Udemy",
+      "issueDate": "2025-01-01",
+      "credentialId": "Web-Dev-2025",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Responsive Web Design"
+      ],
+      "fileUrl": "/uploads/English_Ultimate_Web_Development_Course_2025_Build_Modern_Websites_Certificate.pdf",
+      "previewType": "pdf",
+      "thumbUrl": "",
+      "description": "Modern web development course focused on building responsive and production-ready websites."
+    },
+    {
+      "id": "job-ready-data-science",
+      "title": "The Ultimate Job Ready Data Science Course",
+      "issuer": "Code With Harry",
+      "issueDate": "2025-01-01",
+      "credentialId": "Job-Ready-DS-2025",
+      "skills": [
+        "Data Science",
+        "Pandas",
+        "Visualization",
+        "ML Basics"
+      ],
+      "fileUrl": "/uploads/The_Ultimate_Job_Ready_Data_Science_Course_Certificate.pdf",
+      "previewType": "pdf",
+      "thumbUrl": "",
+      "description": "Job-focused data science coursework with practical exercises and end-to-end analytics workflow."
+    }
+  ]
 }
