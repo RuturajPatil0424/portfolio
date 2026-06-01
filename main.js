@@ -301,6 +301,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <h2 class="contact-title">${esc(data.contact.title || 'Get In Touch')}</h2>
             <p class="contact-desc">${esc(data.contact.description || '')}</p>
             <div class="contact-info">
+              <div class="contact-item"><i class="fas fa-envelope"></i><span>${esc(data.contact.email || '')}</span></div>
               <div class="contact-item"><i class="fas fa-phone"></i><span>${esc(data.contact.phone || '')}</span></div>
               <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>${esc(data.contact.location || '')}</span></div>
             </div>
