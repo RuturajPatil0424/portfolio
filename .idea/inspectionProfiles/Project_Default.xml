@@ -1,0 +1,88 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="amqp" />
+          <option value="annotated-types" />
+          <option value="anyio" />
+          <option value="billiard" />
+          <option value="cachetools" />
+          <option value="celery" />
+          <option value="channels" />
+          <option value="click" />
+          <option value="click-didyoumean" />
+          <option value="click-plugins" />
+          <option value="click-repl" />
+          <option value="colorama" />
+          <option value="distro" />
+          <option value="django-cors-headers" />
+          <option value="django-environ" />
+          <option value="django-filter" />
+          <option value="django-sslserver" />
+          <option value="djangorestframework" />
+          <option value="djangorestframework_simplejwt" />
+          <option value="dotenv" />
+          <option value="et_xmlfile" />
+          <option value="filelock" />
+          <option value="fsspec" />
+          <option value="google-ai-generativelanguage" />
+          <option value="google-api-core" />
+          <option value="google-api-python-client" />
+          <option value="google-auth-httplib2" />
+          <option value="google-auth-oauthlib" />
+          <option value="google-genai" />
+          <option value="googleapis-common-protos" />
+          <option value="grpcio" />
+          <option value="grpcio-status" />
+          <option value="gunicorn" />
+          <option value="h11" />
+          <option value="httpcore" />
+          <option value="httplib2" />
+          <option value="httpx" />
+          <option value="Jinja2" />
+          <option value="jiter" />
+          <option value="kombu" />
+          <option value="MarkupSafe" />
+          <option value="mpmath" />
+          <option value="networkx" />
+          <option value="numpy" />
+          <option value="oauthlib" />
+          <option value="openai" />
+          <option value="opencv-python" />
+          <option value="openpyxl" />
+          <option value="packaging" />
+          <option value="prompt_toolkit" />
+          <option value="proto-plus" />
+          <option value="protobuf" />
+          <option value="psycopg2" />
+          <option value="psycopg2-binary" />
+          <option value="pydantic" />
+          <option value="pydantic_core" />
+          <option value="PyJWT" />
+          <option value="pyparsing" />
+          <option value="python-dateutil" />
+          <option value="qrcode" />
+          <option value="redis" />
+          <option value="reportlab" />
+          <option value="requests-oauthlib" />
+          <option value="rsa" />
+          <option value="six" />
+          <option value="sniffio" />
+          <option value="sympy" />
+          <option value="tenacity" />
+          <option value="torch" />
+          <option value="torchvision" />
+          <option value="tqdm" />
+          <option value="typing-inspection" />
+          <option value="tzlocal" />
+          <option value="uritemplate" />
+          <option value="vine" />
+          <option value="wcwidth" />
+          <option value="websockets" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

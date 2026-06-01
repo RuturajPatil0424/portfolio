@@ -1238,7 +1238,7 @@ footer {
 
 @media (max-width: 500px) {
     .skill-items-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -1384,11 +1384,16 @@ footer {
 .skill-item {
     cursor: pointer;
     transition: transform 0.2s ease, background 0.2s ease;
+}
+.skill-items-grid .skill-item {
     padding: 10px;
     border-radius: 8px;
     margin: -10px; /* offset padding */
 }
-.skill-item:hover {
+.skill-items-grid .skill-item:hover {
     background: rgba(255, 255, 255, 0.05);
+    transform: translateY(-2px);
+}
+.project-tech .skill-item:hover {
     transform: translateY(-2px);
 }

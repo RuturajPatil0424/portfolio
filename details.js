@@ -122,6 +122,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   try {
     const data = await loadPublishedData();
+    window.globalData = data;
 
     if (type === 'certificate') {
       const cert = (data.certificates || []).find((c) => c.id === id);
@@ -149,7 +150,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           </div>
           <section class="glass-panel mt-3">
             <h3>Skills Covered</h3>
-            <ul class="project-tech">${(cert.skills || []).map((s) => `<li>${esc(s)}</li>`).join('')}</ul>
+            <div class="project-tech">${(cert.skills || []).map((s) => `<span class="btn btn-secondary btn-small skill-item" data-tech="${esc(s)}" style="cursor: pointer;">${esc(s)}</span>`).join('')}</div>
           </section>
           <section class="glass-panel mt-3">
             <h3>Certificate Preview</h3>
@@ -192,7 +193,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         <section class="glass-panel mt-3">
           <h3>Tech Stack</h3>
-          <div class="project-tech">${(project.tech || []).map((t) => `<span class="btn btn-secondary btn-small" style="cursor: default; pointer-events: none;">${esc(t)}</span>`).join('')}</div>
+          <div class="project-tech">${(project.tech || []).map((t) => `<span class="btn btn-secondary btn-small skill-item" data-tech="${esc(t)}" style="cursor: pointer;">${esc(t)}</span>`).join('')}</div>
         </section>
 
         ${project.problemStatement ? `
@@ -226,7 +227,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         ${project.skills && project.skills.length > 0 ? `
         <section class="glass-panel mt-3">
           <h3>Skills Demonstrated</h3>
-          <div class="project-tech">${project.skills.map((s) => `<span class="btn btn-secondary btn-small" style="cursor: default; pointer-events: none;">${esc(s)}</span>`).join('')}</div>
+          <div class="project-tech">${project.skills.map((s) => `<span class="btn btn-secondary btn-small skill-item" data-tech="${esc(s)}" style="cursor: pointer;">${esc(s)}</span>`).join('')}</div>
         </section>
         ` : ''}
 
@@ -252,3 +253,52 @@ document.addEventListener('DOMContentLoaded', async () => {
     fallback('Failed to load details', 'There was a problem loading this page. Please refresh and try again.');
   }
 });
+
+
+  function initTechModals() {
+    const modal = document.getElementById('tech-modal');
+    if (!modal) return;
+    
+    const closeBtn = document.getElementById('close-tech-modal');
+    const nameEl = document.getElementById('tech-modal-name');
+    const categoryEl = document.getElementById('tech-modal-category');
+    const iconEl = document.getElementById('tech-modal-icon');
+    const descEl = document.getElementById('tech-modal-desc');
+    const featuresList = document.getElementById('tech-modal-features');
+    const usecasesList = document.getElementById('tech-modal-usecases');
+
+    function openModal(techName) {
+      const details = window.globalData?.techDetails?.[techName];
+      if (!details) return;
+
+      nameEl.textContent = details.name || techName;
+      categoryEl.textContent = details.category || 'Technology';
+      descEl.textContent = details.description || '';
+      
+      const card = document.querySelector(`.skill-item[data-tech="${techName}"] .skill-icon`);
+      iconEl.className = card ? card.className : '';
+      
+      featuresList.innerHTML = (details.features || []).map(f => `<li>${f}</li>`).join('');
+      usecasesList.innerHTML = (details.useCases || []).map(u => `<li>${u}</li>`).join('');
+
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+
+    document.querySelectorAll('.skill-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const tech = item.getAttribute('data-tech');
+        if (tech) openModal(tech);
+      });
+    });
+  }
