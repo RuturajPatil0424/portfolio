@@ -22,28 +22,33 @@
         "order": 3
       },
       {
+        "id": "certifications",
+        "label": "Certifications",
+        "order": 4
+      },
+      {
         "id": "projects",
         "label": "Projects",
         "visible": true,
-        "order": 4
+        "order": 5
       },
       {
         "id": "github",
         "label": "GitHub",
         "visible": false,
-        "order": 5
+        "order": 6
       },
       {
         "id": "blog",
         "label": "Blog",
         "visible": true,
-        "order": 6
+        "order": 7
       },
       {
         "id": "contact",
         "label": "Contact Me",
         "visible": true,
-        "order": 7,
+        "order": 8,
         "cta": true
       }
     ]
@@ -412,17 +417,23 @@
       ]
     },
     {
+      "id": "certifications",
+      "title": "Certifications & Achievements",
+      "labelNo": "04.",
+      "visible": true
+    },
+    {
       "id": "projects",
       "visible": true,
       "order": 4,
-      "labelNo": "04.",
+      "labelNo": "05.",
       "title": "Featured Projects"
     },
     {
       "id": "stats",
       "visible": true,
       "order": 5,
-      "labelNo": "05.",
+      "labelNo": "06.",
       "title": "Project Statistics",
       "items": [
         {
@@ -447,7 +458,7 @@
       "id": "github",
       "visible": false,
       "order": 6,
-      "labelNo": "06.",
+      "labelNo": "07.",
       "title": "GitHub Highlights",
       "items": [
         {
@@ -476,7 +487,7 @@
       "id": "blog",
       "visible": true,
       "order": 7,
-      "labelNo": "07.",
+      "labelNo": "08.",
       "title": "Blog Topics",
       "topics": [
         {
