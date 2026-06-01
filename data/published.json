@@ -506,27 +506,62 @@
     },
     {
       "overline": "Live Web App",
-      "title": "Virtual Clothes Try-On",
-      "desc": "Developed a live interactive web app for virtual clothes try-on using user photo capture/upload and backend image processing workflows.",
+      "title": "Virtual Try Room – AI-Powered Fashion E-Commerce Platform",
+      "desc": "A full-stack AI-powered fashion e-commerce platform that enables users to virtually try clothing items before purchasing using computer vision and AI-driven image processing.",
       "tech": [
-        "Django",
+        "React.js",
         "Python",
-        "Web App"
+        "Django",
+        "Django REST",
+        "PostgreSQL",
+        "AWS S3",
+        "Docker",
+        "Computer Vision"
       ],
       "id": "virtual-clothes-try-on",
-      "role": "Django Developer",
+      "role": "Full-Stack AI Developer",
       "features": [
-        "User photo upload/capture workflow",
-        "Image processing driven virtual fitting",
-        "Interactive preview for multiple outfits"
+        "AI Virtual Try-On: Real-time outfit visualization from user photos",
+        "User Management: JWT authentication, role-based access control",
+        "Product Management: Catalog, variants, inventory tracking",
+        "Shopping Experience: Cart management, wishlist, order tracking",
+        "Analytics Dashboard: Sales, product performance, virtual try-on usage",
+        "Admin Panel: Full administration of users, products, and orders"
       ],
       "outcomes": [
-        "Higher user engagement with visual try-on",
-        "Improved product exploration experience"
+        "Delivers an intelligent online shopping experience by combining e-commerce functionality with AI-driven fashion visualization.",
+        "Demonstrates expertise in full-stack development, database design, REST APIs, cloud integration, and AI-powered apps."
       ],
       "repoUrl": "https://github.com/RuturajPatil0424",
       "liveUrl": "",
-      "gallery": []
+      "gallery": [],
+      "problemStatement": "Online fashion shopping suffers from high return rates because customers cannot accurately determine how clothing will look on them. This project provides AI-based virtual try-on functionality to improve customer confidence and reduce returns.",
+      "architecture": [
+        "Frontend: React.js, JavaScript, HTML5, CSS3",
+        "Backend: Python, Django, DRF, JWT Auth",
+        "AI Processing: Computer Vision Models, Virtual Try-On Engine",
+        "Database: PostgreSQL, Relational Modeling",
+        "Cloud: AWS S3, Media Asset Management"
+      ],
+      "security": [
+        "JWT Authentication & Password Encryption",
+        "Role-Based Authorization & API Security",
+        "CSRF Protection & Secure Media Handling"
+      ],
+      "highlights": [
+        "Designed scalable full-stack REST API architecture",
+        "Integrated AI-powered virtual try-on workflows",
+        "Optimized PostgreSQL schemas for e-commerce and analytics",
+        "Implemented cloud-based media storage and image processing pipelines"
+      ],
+      "skills": [
+        "Full-Stack Development",
+        "Python/Django REST APIs",
+        "PostgreSQL",
+        "React",
+        "AI/ML Integration",
+        "Cloud Storage Integration"
+      ]
     },
     {
       "overline": "AI Engine",

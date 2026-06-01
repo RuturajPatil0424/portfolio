@@ -192,8 +192,43 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         <section class="glass-panel mt-3">
           <h3>Tech Stack</h3>
-          <ul class="project-tech">${(project.tech || []).map((t) => `<li>${esc(t)}</li>`).join('')}</ul>
+          <div class="project-tech">${(project.tech || []).map((t) => `<span class="btn btn-secondary btn-small" style="cursor: default; pointer-events: none;">${esc(t)}</span>`).join('')}</div>
         </section>
+
+        ${project.problemStatement ? `
+        <section class="glass-panel mt-3">
+          <h3>Problem Statement</h3>
+          <p>${esc(project.problemStatement)}</p>
+        </section>
+        ` : ''}
+
+        ${project.architecture && project.architecture.length > 0 ? `
+        <section class="glass-panel mt-3">
+          <h3>Technical Architecture</h3>
+          <ul class="task-list">${project.architecture.map((a) => `<li>${esc(a)}</li>`).join('')}</ul>
+        </section>
+        ` : ''}
+
+        ${project.security && project.security.length > 0 ? `
+        <section class="glass-panel mt-3">
+          <h3>Security Features</h3>
+          <ul class="task-list">${project.security.map((s) => `<li>${esc(s)}</li>`).join('')}</ul>
+        </section>
+        ` : ''}
+
+        ${project.highlights && project.highlights.length > 0 ? `
+        <section class="glass-panel mt-3">
+          <h3>Development Highlights</h3>
+          <ul class="task-list">${project.highlights.map((h) => `<li>${esc(h)}</li>`).join('')}</ul>
+        </section>
+        ` : ''}
+
+        ${project.skills && project.skills.length > 0 ? `
+        <section class="glass-panel mt-3">
+          <h3>Skills Demonstrated</h3>
+          <div class="project-tech">${project.skills.map((s) => `<span class="btn btn-secondary btn-small" style="cursor: default; pointer-events: none;">${esc(s)}</span>`).join('')}</div>
+        </section>
+        ` : ''}
 
         <section class="glass-panel mt-3">
           <h3>Project Links</h3>

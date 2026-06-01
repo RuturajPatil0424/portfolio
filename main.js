@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p class="project-overline">${esc(p.overline || '')}</p>
                 <h3 class="project-title">${esc(p.title || '')}</h3>
                 <div class="project-desc"><p>${esc(p.desc || '')}</p></div>
-                <ul class="project-tech">${(p.tech || []).map((t) => `<li>${esc(t)}</li>`).join('')}</ul>
+                <div class="project-tech">${(p.tech || []).map((t) => `<span class="btn btn-secondary btn-small" style="cursor: default; pointer-events: none;">${esc(t)}</span>`).join('')}</div>
                 <div class="project-links">
                   <a class="btn btn-secondary btn-small" href="${detailUrl('project', p.id)}">View</a>
                 </div>

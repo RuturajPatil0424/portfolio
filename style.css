@@ -710,10 +710,10 @@ main {
     color: var(--text-muted);
     font-size: 0.95rem;
     margin-bottom: 20px;
-    flex-grow: 1;
 }
 
 .project-tech {
+    margin-top: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -1189,4 +1189,10 @@ footer {
 
 [data-theme="light"] .floating-card {
     box-shadow: 0 12px 28px rgba(32, 67, 121, 0.16);
+}
+
+
+/* Details layout fixes */
+.details-layout .glass-panel h3 {
+    margin-bottom: 15px;
 }
