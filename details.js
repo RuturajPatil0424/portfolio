@@ -124,6 +124,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const data = await loadPublishedData();
     window.globalData = data;
     window.globalData = data;
+    window.globalData = data;
 
     if (type === 'certificate') {
       const cert = (data.certificates || []).find((c) => c.id === id);
@@ -236,8 +237,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         <section class="glass-panel mt-3">
           <h3>Project Links</h3>
           <div class="project-links">
-            ${project.repoUrl ? `<a href="${esc(project.repoUrl)}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Repository</a>` : ''}
-            ${project.liveUrl ? `<a href="${esc(project.liveUrl)}" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>` : ''}
+            ${project.repoUrl ? `<a class="btn btn-secondary btn-small" href="${esc(project.repoUrl)}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Repository</a>` : ''}
+            ${project.liveUrl ? `<a class="btn btn-secondary btn-small" href="${esc(project.liveUrl)}" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>` : ''}
           </div>
         </section>
 
@@ -256,6 +257,55 @@ document.addEventListener('DOMContentLoaded', async () => {
     fallback('Failed to load details', 'There was a problem loading this page. Please refresh and try again.');
   }
 });
+
+
+  function initTechModals() {
+    const modal = document.getElementById('tech-modal');
+    if (!modal) return;
+    
+    const closeBtn = document.getElementById('close-tech-modal');
+    const nameEl = document.getElementById('tech-modal-name');
+    const categoryEl = document.getElementById('tech-modal-category');
+    const iconEl = document.getElementById('tech-modal-icon');
+    const descEl = document.getElementById('tech-modal-desc');
+    const featuresList = document.getElementById('tech-modal-features');
+    const usecasesList = document.getElementById('tech-modal-usecases');
+
+    function openModal(techName) {
+      const details = window.globalData?.techDetails?.[techName];
+      if (!details) return;
+
+      nameEl.textContent = details.name || techName;
+      categoryEl.textContent = details.category || 'Technology';
+      descEl.textContent = details.description || '';
+      
+      const card = document.querySelector(`.skill-item[data-tech="${techName}"] .skill-icon`);
+      iconEl.className = card ? card.className : '';
+      
+      featuresList.innerHTML = (details.features || []).map(f => `<li>${f}</li>`).join('');
+      usecasesList.innerHTML = (details.useCases || []).map(u => `<li>${u}</li>`).join('');
+
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+
+    document.querySelectorAll('.skill-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const tech = item.getAttribute('data-tech');
+        if (tech) openModal(tech);
+      });
+    });
+  }
 
 
   function initTechModals() {

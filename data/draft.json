@@ -30,7 +30,7 @@
       {
         "id": "github",
         "label": "GitHub",
-        "visible": true,
+        "visible": false,
         "order": 5
       },
       {
@@ -193,7 +193,7 @@
       "title": "Technical Skills",
       "categories": [
         {
-          "emoji": "⚙️",
+          "emoji": "\u2699\ufe0f",
           "title": "Backend Development",
           "items": [
             {
@@ -230,7 +230,7 @@
           ]
         },
         {
-          "emoji": "🌐",
+          "emoji": "\ud83c\udf10",
           "title": "Frontend Development",
           "items": [
             {
@@ -266,7 +266,7 @@
           ]
         },
         {
-          "emoji": "🗄️",
+          "emoji": "\ud83d\uddc4\ufe0f",
           "title": "Database",
           "items": [
             {
@@ -302,7 +302,7 @@
           ]
         },
         {
-          "emoji": "🧠",
+          "emoji": "\ud83e\udde0",
           "title": "AI / Machine Learning",
           "items": [
             {
@@ -360,7 +360,7 @@
           ]
         },
         {
-          "emoji": "☁️",
+          "emoji": "\u2601\ufe0f",
           "title": "DevOps & Cloud",
           "items": [
             {
@@ -445,7 +445,7 @@
     },
     {
       "id": "github",
-      "visible": true,
+      "visible": false,
       "order": 6,
       "labelNo": "06.",
       "title": "GitHub Highlights",
@@ -508,136 +508,8 @@
   ],
   "projects": [
     {
-      "overline": "Enterprise App",
-      "title": "Enterprise Inventory Management System",
-      "desc": "Multi-branch inventory management platform with role-based access control, stock tracking, audit logs, notifications, and analytics dashboard.",
-      "tech": [
-        "Python",
-        "Django",
-        "React",
-        "PostgreSQL",
-        "Redis",
-        "Docker"
-      ],
-      "id": "enterprise-inventory-management-system",
-      "role": "Full-Stack Python Developer",
-      "features": [
-        "Role-based access for admins and branch managers",
-        "Live stock tracking with audit logs",
-        "Automated low-stock alerts and reporting"
-      ],
-      "outcomes": [
-        "Reduced manual stock reconciliation effort",
-        "Improved branch-level inventory visibility"
-      ],
-      "repoUrl": "https://github.com/RuturajPatil0424",
-      "liveUrl": "",
-      "gallery": []
-    },
-    {
-      "overline": "AI Recruitment",
-      "title": "AI Resume Screening Platform",
-      "desc": "AI-powered recruitment system with resume parsing, skill extraction, candidate ranking, and job matching analytics.",
-      "tech": [
-        "Python",
-        "FastAPI",
-        "PostgreSQL",
-        "React",
-        "NLP"
-      ],
-      "id": "ai-resume-screening-platform",
-      "role": "Backend + AI Integration Developer",
-      "features": [
-        "Resume parsing and skill extraction pipeline",
-        "Candidate ranking by JD matching score",
-        "Recruiter-friendly analytics dashboard"
-      ],
-      "outcomes": [
-        "Faster shortlist generation",
-        "Consistent and transparent screening process"
-      ],
-      "repoUrl": "https://github.com/RuturajPatil0424",
-      "liveUrl": "",
-      "gallery": []
-    },
-    {
-      "overline": "Conversational AI",
-      "title": "AI Customer Support Chatbot",
-      "desc": "Enterprise chatbot trained on company documents using RAG architecture, PDF processing, contextual responses, and authenticated knowledge search.",
-      "tech": [
-        "Python",
-        "LangChain",
-        "OpenAI",
-        "FastAPI",
-        "PostgreSQL"
-      ],
-      "id": "ai-customer-support-chatbot",
-      "role": "AI/ML Engineer",
-      "features": [
-        "RAG pipeline over enterprise documents",
-        "Secure contextual Q&A with source grounding",
-        "PDF ingestion and chunked vector search"
-      ],
-      "outcomes": [
-        "Reduced repeated support queries",
-        "Improved response consistency for common issues"
-      ],
-      "repoUrl": "https://github.com/RuturajPatil0424",
-      "liveUrl": "",
-      "gallery": []
-    },
-    {
-      "overline": "Finance App",
-      "title": "Smart Expense Tracker",
-      "desc": "Personal finance app featuring expense categorization, budget management, AI insights, and reports.",
-      "tech": [
-        "Django",
-        "PostgreSQL",
-        "React"
-      ],
-      "id": "smart-expense-tracker",
-      "role": "Full-Stack Developer",
-      "features": [
-        "Expense categorization and budget limits",
-        "Monthly analytics and trends",
-        "Insight-based spending suggestions"
-      ],
-      "outcomes": [
-        "Better budget tracking for users",
-        "Simplified monthly financial reviews"
-      ],
-      "repoUrl": "https://github.com/RuturajPatil0424",
-      "liveUrl": "",
-      "gallery": []
-    },
-    {
-      "overline": "ML System",
-      "title": "Predictive Maintenance System",
-      "desc": "Machine learning system for real-time monitoring, failure prediction, automated alerts, and operational dashboards.",
-      "tech": [
-        "Python",
-        "Scikit-Learn",
-        "FastAPI",
-        "PostgreSQL"
-      ],
-      "id": "predictive-maintenance-system",
-      "role": "ML Engineer",
-      "features": [
-        "Sensor-based failure prediction model",
-        "Alerting for high-risk machine states",
-        "Operational performance dashboard"
-      ],
-      "outcomes": [
-        "Earlier failure detection",
-        "Lower unplanned downtime risk"
-      ],
-      "repoUrl": "https://github.com/RuturajPatil0424",
-      "liveUrl": "",
-      "gallery": []
-    },
-    {
       "overline": "Live Web App",
-      "title": "Virtual Try Room – AI-Powered Fashion E-Commerce Platform",
+      "title": "Virtual Try Room AI-Powered Fashion E-Commerce Platform",
       "desc": "A full-stack AI-powered fashion e-commerce platform that enables users to virtually try clothing items before purchasing using computer vision and AI-driven image processing.",
       "tech": [
         "React.js",
@@ -663,8 +535,8 @@
         "Delivers an intelligent online shopping experience by combining e-commerce functionality with AI-driven fashion visualization.",
         "Demonstrates expertise in full-stack development, database design, REST APIs, cloud integration, and AI-powered apps."
       ],
-      "repoUrl": "https://github.com/RuturajPatil0424",
-      "liveUrl": "",
+      "repoUrl": "https://github.com/RuturajPatil0424/virtual_try_on.git",
+      "liveUrl": "https://tryon.walstargroup.com/",
       "gallery": [],
       "problemStatement": "Online fashion shopping suffers from high return rates because customers cannot accurately determine how clothing will look on them. This project provides AI-based virtual try-on functionality to improve customer confidence and reduce returns.",
       "architecture": [
@@ -695,30 +567,263 @@
       ]
     },
     {
-      "overline": "AI Engine",
-      "title": "RAG-Based AI Teaching Assistant",
-      "desc": "Built a RAG assistant over educational video content using Whisper transcription and vector search for accurate context retrieval.",
-      "tech": [
-        "Python",
-        "OpenAI API",
-        "LangChain",
-        "Pinecone / FAISS",
-        "Whisper"
-      ],
-      "id": "rag-based-ai-teaching-assistant",
-      "role": "RAG System Builder",
+      "id": "campusflow-erp",
+      "overline": "AI-Powered ERP",
+      "title": "CampusFlow Smart Student ERP, Analytics & AI Prediction Platform",
+      "desc": "A next-generation Student ERP and Academic Intelligence Platform that combines traditional student management with advanced analytics and AI-powered performance prediction.",
+      "role": "Full-Stack AI Developer",
       "features": [
-        "Whisper-based video transcription pipeline",
-        "Vector search for context retrieval",
-        "Question answering with source-grounded responses"
+        "Student & Attendance Management: Complete academic profile tracking, daily attendance monitoring, and automated alerts.",
+        "Examination & Finance: Exam scheduling, grading, fee tracking, and financial analytics.",
+        "Role-Based Access Control: Dedicated portals for super admins, institution admins, teachers, students, and parents.",
+        "Interactive Dashboards: Real-time analytics, performance insights, and exportable academic reports.",
+        "AI Performance Prediction: Machine Learning models to forecast scores, assess academic risk, and provide early warning alerts."
       ],
       "outcomes": [
-        "Faster learning support from long lectures",
-        "Improved retrieval quality for topic-specific queries"
+        "Centralizes academic management, significantly reducing administrative workload and increasing operational efficiency.",
+        "Enables early intervention for struggling students, improving overall academic outcomes and student engagement."
+      ],
+      "repoUrl": "https://github.com/RuturajPatil0424/CampusFlow.git",
+      "liveUrl": "",
+      "gallery": [],
+      "problemStatement": "Educational institutions struggle with fragmented academic systems and lack the predictive tools to proactively help students. CampusFlow solves this by centralizing the complete academic workflow and leveraging Machine Learning to predict student outcomes and identify at-risk students before their performance declines.",
+      "architecture": [
+        "Frontend: React.js, TypeScript, Tailwind CSS, Recharts",
+        "Backend: Django, Django REST Framework, JWT Auth",
+        "Database: PostgreSQL with Multi-Tenant Architecture",
+        "AI Processing: Python, Scikit-Learn, XGBoost/Random Forest",
+        "DevOps: Docker, Nginx, CI/CD Pipeline"
+      ],
+      "security": [
+        "JWT-Based Authentication & Secure Password Hashing",
+        "Enterprise-Level Role-Based Access Control (RBAC)",
+        "API Authorization, Validation, and Audit Logging"
+      ],
+      "highlights": [
+        "Developed a scalable multi-tenant architecture to support multiple institutions",
+        "Engineered an AI-Powered Prediction Engine trained on historical academic data",
+        "Built centralized dashboards for real-time institutional analytics and forecasting",
+        "Designed a scalable, relational PostgreSQL database schema for complex ERP workflows"
+      ],
+      "skills": [
+        "Full-Stack Development",
+        "Machine Learning Integration",
+        "Predictive Analytics",
+        "Database Design",
+        "Multi-Tenant Architecture"
+      ],
+      "tech": [
+        "React",
+        "TypeScript",
+        "Django",
+        "Python",
+        "PostgreSQL",
+        "Scikit-Learn",
+        "Pandas",
+        "Docker",
+        "AWS"
+      ]
+    },
+    {
+      "id": "vectormind-ai-teaching-assistant",
+      "overline": "AI Teaching Assistant",
+      "title": "VectorMind AI Teaching Assistant",
+      "desc": "An intelligent educational platform that combines RAG, vector search, and LLMs to deliver personalized learning support and intelligent academic assistance.",
+      "role": "AI Developer",
+      "features": [
+        "\ud83c\udf93 Intelligent Learning Assistant: Natural language question answering and context-aware educational conversations",
+        "\ud83d\udcda Document-Based Learning: Upload and process study materials for contextual answers",
+        "\ud83e\udde0 Retrieval-Augmented Generation (RAG): Semantic search using vector embeddings",
+        "\ud83d\udcac Conversational Learning Experience: Interactive AI tutor interface with multi-turn conversations",
+        "\ud83d\udcd6 Smart Knowledge Base: Automated document indexing and educational resource management",
+        "\u26a1 Real-Time Assistance: Instant response generation and fast document retrieval",
+        "\ud83d\udd12 Secure Learning Environment: Secure document management and student data protection"
+      ],
+      "outcomes": [
+        "Improved student learning efficiency and faster access to educational information",
+        "Enhanced engagement through interactive learning and personalized academic support",
+        "Reduced dependency on manual content searching and scalable assistance"
+      ],
+      "repoUrl": "https://github.com/RuturajPatil0424/VectorMind-RAG-Based-AI-Assistant.git",
+      "liveUrl": "",
+      "gallery": [],
+      "problemStatement": "Students often struggle to find immediate and personalized academic support outside classroom hours. Traditional learning platforms provide static content but lack interactive guidance and contextual understanding of educational materials. The AI Teaching Assistant addresses these challenges by providing an intelligent tutoring system capable of understanding educational content, answering questions based on study materials, and delivering personalized learning experiences through conversational AI.",
+      "architecture": [
+        "Frontend: HTML, CSS, JavaScript, Bootstrap",
+        "Backend: Python, Flask",
+        "AI Engine: Ollama / LLMs, RAG, NLP",
+        "Database: FAISS Vector Database, SQLite",
+        "Tools & Frameworks: Git, GitHub, Web Scraping, Vector Search Technologies"
+      ],
+      "security": [
+        "Secure document management",
+        "Student data protection",
+        "Controlled knowledge access",
+        "Privacy-focused architecture"
+      ],
+      "highlights": [
+        "Developed a RAG-based educational assistant using modern AI technologies",
+        "Implemented semantic search and vector embeddings for intelligent document retrieval",
+        "Integrated Large Language Models for context-aware educational responses",
+        "Built a document ingestion pipeline for processing learning resources",
+        "Designed conversational memory to maintain learning context across interactions"
+      ],
+      "skills": [
+        "Educational Technology",
+        "Conversational AI",
+        "Semantic Search",
+        "Knowledge Retrieval",
+        "Machine Learning"
+      ],
+      "tech": [
+        "Python",
+        "Flask",
+        "RAG",
+        "FAISS",
+        "Ollama",
+        "LLM",
+        "NLP",
+        "SQLite"
+      ]
+    },
+    {
+      "overline": "Enterprise App",
+      "title": "Enterprise Inventory Management System",
+      "desc": "Multi-branch inventory management platform with role-based access control, stock tracking, audit logs, notifications, and analytics dashboard.",
+      "tech": [
+        "Python",
+        "Django",
+        "React",
+        "PostgreSQL",
+        "Redis",
+        "Docker"
+      ],
+      "id": "enterprise-inventory-management-system",
+      "role": "Full-Stack Python Developer",
+      "features": [
+        "Role-based access for admins and branch managers",
+        "Live stock tracking with audit logs",
+        "Automated low-stock alerts and reporting"
+      ],
+      "outcomes": [
+        "Reduced manual stock reconciliation effort",
+        "Improved branch-level inventory visibility"
       ],
       "repoUrl": "https://github.com/RuturajPatil0424",
       "liveUrl": "",
       "gallery": []
+    },
+    {
+      "id": "ai-desktop-personal-assistant",
+      "overline": "Desktop AI Platform",
+      "title": "AI Desktop Personal Assistant",
+      "desc": "A desktop-based intelligent productivity platform that combines conversational AI, voice interaction, system automation, file management, and task scheduling into a single application.",
+      "role": "AI Developer",
+      "features": [
+        "Natural language interaction & context-aware conversations",
+        "Voice command execution with speech-to-text and TTS",
+        "OS-level task automation and system command execution",
+        "Intelligent file management with natural language search",
+        "Web search integration and information retrieval",
+        "Persistent conversation history and user preference learning"
+      ],
+      "outcomes": [
+        "Improves productivity through automation and centralized tools.",
+        "Reduces repetitive manual tasks with AI assistance."
+      ],
+      "repoUrl": "https://github.com/RuturajPatil0424/AI_Assistant3.0.git",
+      "liveUrl": "",
+      "gallery": [],
+      "problemStatement": "Users often struggle with repetitive manual tasks and switching between multiple tools. This AI Desktop Personal Assistant centralizes automation, file management, and AI assistance into a single, scalable, privacy-focused desktop environment.",
+      "architecture": [
+        "Frontend: Modern Desktop UI",
+        "Backend: Python-Based Architecture",
+        "AI Models: LLM Integration (Local & Cloud)",
+        "Database: SQLite / PostgreSQL"
+      ],
+      "security": [
+        "Privacy-focused local operation capability"
+      ],
+      "highlights": [
+        "Developed a modular plugin system for custom skill development",
+        "Integrated a vector-based semantic search for the memory system",
+        "Implemented local automation and OS-level control"
+      ],
+      "skills": [
+        "Desktop Application Development",
+        "Conversational AI",
+        "Voice Processing",
+        "System Automation",
+        "Local LLMs"
+      ],
+      "tech": [
+        "Python",
+        "SQLite",
+        "PostgreSQL",
+        "LLMs",
+        "Speech Recognition",
+        "TTS"
+      ]
+    },
+    {
+      "id": "medical-billing-rcm",
+      "overline": "Healthcare SaaS",
+      "title": "Medical Billing & Revenue Cycle Management Platform",
+      "desc": "A comprehensive healthcare billing platform designed to streamline patient billing, insurance claim processing, payment tracking, denial management, and financial reporting.",
+      "role": "Full-Stack Developer",
+      "features": [
+        "\ud83c\udfe5 Patient & Provider Management: Patient registration, insurance tracking, and physician management.",
+        "\ud83d\udccb Medical Coding: ICD-10/CPT code management and automated charge entry workflows.",
+        "\ud83d\udcb3 Insurance Claim Processing: Electronic claim creation, submission workflow, and real-time tracking.",
+        "\ud83d\udd04 Revenue Cycle Management: End-to-end billing lifecycle tracking and accounts receivable management.",
+        "\ud83d\udeab Denial Management: Denial detection, root cause analysis, and appeal workflow tracking.",
+        "\ud83d\udcb0 Financial Management: Payment posting, reconciliation, revenue tracking, and custom reports."
+      ],
+      "outcomes": [
+        "Reduces claim processing time by up to 70% and minimizes billing errors through automation.",
+        "Accelerates reimbursement cycles and enhances financial visibility with real-time analytics."
+      ],
+      "repoUrl": "https://github.com/RuturajPatil0424/Billing.git",
+      "liveUrl": "",
+      "gallery": [],
+      "problemStatement": "Healthcare providers face massive administrative overhead when managing complex billing cycles, leading to delayed reimbursements and lost revenue due to claim denials. This platform automates insurance claims, payment processing, denial management, and financial analytics to help healthcare providers increase revenue and streamline billing operations.",
+      "architecture": [
+        "Frontend: React.js / Next.js, TypeScript, Tailwind CSS",
+        "Backend: Django / FastAPI, Python, REST APIs",
+        "Database & Caching: PostgreSQL, Redis",
+        "Cloud & DevOps: Docker, Nginx, AWS / Azure, CI/CD",
+        "Analytics: Pandas, NumPy, Power BI"
+      ],
+      "security": [
+        "HIPAA-compliant architecture with data encryption",
+        "Role-based access control (RBAC)",
+        "Audit logs, activity tracking, and Multi-factor authentication"
+      ],
+      "highlights": [
+        "Developed end-to-end automated workflows for insurance claim processing",
+        "Built real-time revenue analytics and financial forecasting dashboards",
+        "Implemented denial management systems to track and appeal rejected claims",
+        "Engineered a scalable, HIPAA-compliant healthcare application architecture"
+      ],
+      "skills": [
+        "Healthcare IT Development",
+        "Revenue Cycle Management",
+        "Full-Stack Architecture",
+        "Payment Processing Integration",
+        "Data Analytics & Reporting"
+      ],
+      "tech": [
+        "React",
+        "TypeScript",
+        "Django",
+        "FastAPI",
+        "Python",
+        "PostgreSQL",
+        "Redis",
+        "Docker",
+        "AWS",
+        "Pandas"
+      ]
     },
     {
       "overline": "Mobile App",
@@ -771,7 +876,7 @@
       }
     ],
     "line1": "Built with Vanilla HTML, CSS & JS.",
-    "line2": "� 2026 Ruturaj Patil. All rights reserved."
+    "line2": "\ufffd 2026 Ruturaj Patil. All rights reserved."
   },
   "certificates": [
     {
