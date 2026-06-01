@@ -168,13 +168,23 @@ document.addEventListener('DOMContentLoaded', () => {
       if (node) {
         if (skills.visible === false) node.remove();
         else node.outerHTML = sectionWrapper('skills', skills.labelNo || '03.', skills.title || 'Skills', `
-          <div class="skills-grid reveal">
+          <div class="skills-grid new-skills reveal">
             ${(skills.categories || []).map((c) => `
               <div class="skill-category glass-panel">
-                <i class="${esc(c.icon || '')} category-icon"></i>
-                <h3>${esc(c.title || '')}</h3>
-                <div class="skill-tags">
-                  ${(c.tags || []).map((t) => `<span class="${(c.highlights || []).includes(t) ? 'highlight' : ''}">${esc(t)}</span>`).join(' ')}
+                <div class="category-header">
+                  <span class="category-emoji">${c.emoji || ''}</span>
+                  <h3>${esc(c.title || '')}</h3>
+                </div>
+                <div class="skill-items-grid">
+                  ${(c.items || []).map((it) => `
+                    <div class="skill-item">
+                      <i class="${esc(it.icon || '')} skill-icon"></i>
+                      <div class="skill-info">
+                        <span class="skill-name">${esc(it.name || '')}</span>
+                        <span class="skill-level">${esc(it.level || '')}</span>
+                      </div>
+                    </div>
+                  `).join('')}
                 </div>
               </div>
             `).join('')}

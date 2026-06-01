@@ -193,77 +193,204 @@
       "title": "Technical Skills",
       "categories": [
         {
-          "icon": "fas fa-server",
+          "emoji": "⚙️",
           "title": "Backend Development",
-          "tags": [
-            "Python",
-            "Django",
-            "FastAPI",
-            "Flask",
-            "REST APIs",
-            "JWT Authentication"
-          ],
-          "highlights": [
-            "Python"
+          "items": [
+            {
+              "name": "Python",
+              "level": "Experienced",
+              "icon": "devicon-python-plain colored"
+            },
+            {
+              "name": "Django",
+              "level": "Experienced",
+              "icon": "devicon-django-plain colored"
+            },
+            {
+              "name": "FastAPI",
+              "level": "Experienced",
+              "icon": "devicon-fastapi-plain colored"
+            },
+            {
+              "name": "Flask",
+              "level": "Familiar",
+              "icon": "devicon-flask-original colored"
+            },
+            {
+              "name": "REST APIs",
+              "level": "Experienced",
+              "icon": "fas fa-network-wired text-primary"
+            },
+            {
+              "name": "JWT Authentication",
+              "level": "Experienced",
+              "icon": "fas fa-key text-primary"
+            }
           ]
         },
         {
-          "icon": "fas fa-laptop-code",
+          "emoji": "🌐",
           "title": "Frontend Development",
-          "tags": [
-            "HTML5",
-            "CSS3",
-            "JavaScript",
-            "React.js",
-            "Bootstrap",
-            "Tailwind CSS"
-          ],
-          "highlights": []
-        },
-        {
-          "icon": "fas fa-database",
-          "title": "Database",
-          "tags": [
-            "PostgreSQL",
-            "MySQL",
-            "MongoDB",
-            "SQLite",
-            "Database Design",
-            "Query Optimization"
-          ],
-          "highlights": []
-        },
-        {
-          "icon": "fas fa-brain",
-          "title": "AI / Machine Learning",
-          "tags": [
-            "Scikit-Learn",
-            "Pandas",
-            "NumPy",
-            "Matplotlib",
-            "OpenAI APIs",
-            "LangChain",
-            "FAISS / ChromaDB",
-            "Whisper",
-            "Ollama",
-            "RAG Systems"
-          ],
-          "highlights": [
-            "RAG Systems"
+          "items": [
+            {
+              "name": "HTML5",
+              "level": "Experienced",
+              "icon": "devicon-html5-plain colored"
+            },
+            {
+              "name": "CSS3",
+              "level": "Experienced",
+              "icon": "devicon-css3-plain colored"
+            },
+            {
+              "name": "JavaScript",
+              "level": "Experienced",
+              "icon": "devicon-javascript-plain colored"
+            },
+            {
+              "name": "React.js",
+              "level": "Experienced",
+              "icon": "devicon-react-original colored"
+            },
+            {
+              "name": "Bootstrap",
+              "level": "Experienced",
+              "icon": "devicon-bootstrap-plain colored"
+            },
+            {
+              "name": "Tailwind CSS",
+              "level": "Intermediate",
+              "icon": "devicon-tailwindcss-plain colored"
+            }
           ]
         },
         {
-          "icon": "fas fa-cloud",
+          "emoji": "🗄️",
+          "title": "Database",
+          "items": [
+            {
+              "name": "PostgreSQL",
+              "level": "Experienced",
+              "icon": "devicon-postgresql-plain colored"
+            },
+            {
+              "name": "MySQL",
+              "level": "Experienced",
+              "icon": "devicon-mysql-plain colored"
+            },
+            {
+              "name": "MongoDB",
+              "level": "Experienced",
+              "icon": "devicon-mongodb-plain colored"
+            },
+            {
+              "name": "SQLite",
+              "level": "Experienced",
+              "icon": "devicon-sqlite-plain colored"
+            },
+            {
+              "name": "Database Design",
+              "level": "Experienced",
+              "icon": "fas fa-project-diagram text-primary"
+            },
+            {
+              "name": "Query Optimization",
+              "level": "Experienced",
+              "icon": "fas fa-bolt text-primary"
+            }
+          ]
+        },
+        {
+          "emoji": "🧠",
+          "title": "AI / Machine Learning",
+          "items": [
+            {
+              "name": "Scikit-Learn",
+              "level": "Experienced",
+              "icon": "devicon-scikitlearn-plain colored"
+            },
+            {
+              "name": "Pandas",
+              "level": "Experienced",
+              "icon": "devicon-pandas-original colored"
+            },
+            {
+              "name": "NumPy",
+              "level": "Experienced",
+              "icon": "devicon-numpy-original colored"
+            },
+            {
+              "name": "Matplotlib",
+              "level": "Experienced",
+              "icon": "devicon-matplotlib-plain colored"
+            },
+            {
+              "name": "OpenAI APIs",
+              "level": "Experienced",
+              "icon": "fas fa-robot text-primary"
+            },
+            {
+              "name": "LangChain",
+              "level": "Experienced",
+              "icon": "fas fa-link text-primary"
+            },
+            {
+              "name": "FAISS / ChromaDB",
+              "level": "Experienced",
+              "icon": "fas fa-database text-primary"
+            },
+            {
+              "name": "Whisper",
+              "level": "Experienced",
+              "icon": "fas fa-microphone text-primary"
+            },
+            {
+              "name": "Ollama",
+              "level": "Experienced",
+              "icon": "fas fa-brain text-primary"
+            },
+            {
+              "name": "RAG Systems",
+              "level": "Experienced",
+              "icon": "fas fa-project-diagram text-primary"
+            }
+          ]
+        },
+        {
+          "emoji": "☁️",
           "title": "DevOps & Cloud",
-          "tags": [
-            "Git",
-            "GitHub",
-            "Docker",
-            "AWS",
-            "Linux",
-            "Nginx"
-          ],
-          "highlights": []
+          "items": [
+            {
+              "name": "Git",
+              "level": "Experienced",
+              "icon": "devicon-git-plain colored"
+            },
+            {
+              "name": "GitHub",
+              "level": "Experienced",
+              "icon": "devicon-github-original colored"
+            },
+            {
+              "name": "Docker",
+              "level": "Experienced",
+              "icon": "devicon-docker-plain colored"
+            },
+            {
+              "name": "AWS",
+              "level": "Experienced",
+              "icon": "fab fa-aws text-primary"
+            },
+            {
+              "name": "Linux",
+              "level": "Experienced",
+              "icon": "devicon-linux-plain colored"
+            },
+            {
+              "name": "Nginx",
+              "level": "Experienced",
+              "icon": "devicon-nginx-original colored"
+            }
+          ]
         }
       ],
       "certificationsTitle": "Certifications & Achievements",
