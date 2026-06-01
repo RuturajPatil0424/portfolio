@@ -158,8 +158,8 @@
       "title": "Experience",
       "items": [
         {
-          "role": "Trainee Python Developer",
-          "date": "March 2026",
+          "role": "Jr. Python Developer",
+          "date": "March 2026 - Present",
           "company": "Walstar Technologies Pvt Ltd | Kolhapur, India",
           "tasks": [
             "Developed scalable backend systems using Python and Django.",
@@ -214,7 +214,8 @@
             {
               "name": "Flask",
               "level": "Familiar",
-              "icon": "devicon-flask-original colored"
+              "icon": "devicon-flask-original colored",
+              "iconDark": "devicon-flask-original"
             },
             {
               "name": "REST APIs",
@@ -312,12 +313,14 @@
             {
               "name": "Pandas",
               "level": "Experienced",
-              "icon": "devicon-pandas-original colored"
+              "icon": "devicon-pandas-plain colored",
+              "iconDark": "devicon-pandas-plain"
             },
             {
               "name": "NumPy",
               "level": "Experienced",
-              "icon": "devicon-numpy-original colored"
+              "icon": "devicon-numpy-plain colored",
+              "iconDark": "devicon-numpy-plain"
             },
             {
               "name": "Matplotlib",
@@ -368,7 +371,8 @@
             {
               "name": "GitHub",
               "level": "Experienced",
-              "icon": "devicon-github-original colored"
+              "icon": "devicon-github-original colored",
+              "iconDark": "devicon-github-original"
             },
             {
               "name": "Docker",

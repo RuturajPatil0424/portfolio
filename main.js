@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="skill-items-grid">
                   ${(c.items || []).map((it) => `
                     <div class="skill-item" data-tech="${esc(it.name || '')}">
-                      <i class="${esc(it.icon || '')} skill-icon"></i>
+                      <i class="${esc(it.icon || '')} skill-icon ${it.iconDark ? 'light-only' : ''}"></i>${it.iconDark ? `\n                      <i class="${esc(it.iconDark)} skill-icon dark-only"></i>` : ''}
                       <div class="skill-info">
                         <span class="skill-name">${esc(it.name || '')}</span>
                         <span class="skill-level">${esc(it.level || '')}</span>
