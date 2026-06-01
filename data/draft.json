@@ -1500,6 +1500,471 @@
         "Microservices Routing",
         "Caching"
       ]
+    },
+    "React": {
+      "name": "React",
+      "category": "Frontend Library",
+      "description": "React is a declarative, efficient, and flexible JavaScript library for building user interfaces.",
+      "features": [
+        "Component-Based",
+        "Virtual DOM",
+        "Declarative UI",
+        "Hooks"
+      ],
+      "useCases": [
+        "Single Page Applications",
+        "Complex Web Apps",
+        "Interactive Dashboards"
+      ]
+    },
+    "NLP": {
+      "name": "NLP (Natural Language Processing)",
+      "category": "Artificial Intelligence",
+      "description": "Natural language processing is a subfield of linguistics, computer science, and AI concerned with the interactions between computers and human language.",
+      "features": [
+        "Text Analysis",
+        "Sentiment Analysis",
+        "Entity Recognition",
+        "Language Translation"
+      ],
+      "useCases": [
+        "Chatbots",
+        "Automated Summarization",
+        "Resume Screening",
+        "Voice Assistants"
+      ]
+    },
+    "OpenAI": {
+      "name": "OpenAI",
+      "category": "AI Research & Deployment",
+      "description": "OpenAI provides highly advanced AI models like GPT-4 and Whisper for complex reasoning and generative tasks.",
+      "features": [
+        "Generative Text",
+        "Advanced Reasoning",
+        "Speech-to-Text",
+        "Code Generation"
+      ],
+      "useCases": [
+        "Virtual Assistants",
+        "Content Generation",
+        "Data Extraction"
+      ]
+    },
+    "Django REST": {
+      "name": "Django REST Framework",
+      "category": "API Framework",
+      "description": "A powerful and flexible toolkit for building Web APIs in Python.",
+      "features": [
+        "Serialization",
+        "Authentication Policies",
+        "ViewSets",
+        "Browsable API"
+      ],
+      "useCases": [
+        "Backend Web Services",
+        "Microservices",
+        "Data Pipelines"
+      ]
+    },
+    "AWS S3": {
+      "name": "Amazon S3",
+      "category": "Cloud Storage",
+      "description": "Amazon Simple Storage Service (Amazon S3) is an object storage service offering industry-leading scalability and security.",
+      "features": [
+        "Object Storage",
+        "High Durability",
+        "Access Control",
+        "Data Lifecycle Management"
+      ],
+      "useCases": [
+        "Media Hosting",
+        "Data Backups",
+        "Static Website Hosting"
+      ]
+    },
+    "Computer Vision": {
+      "name": "Computer Vision",
+      "category": "Artificial Intelligence",
+      "description": "A field of AI that enables computers and systems to derive meaningful information from digital images, videos and other visual inputs.",
+      "features": [
+        "Object Detection",
+        "Facial Recognition",
+        "Image Segmentation",
+        "Pattern Recognition"
+      ],
+      "useCases": [
+        "Autonomous Vehicles",
+        "Medical Imaging",
+        "Security Systems"
+      ]
+    },
+    "Full-Stack Development": {
+      "name": "Full-Stack Development",
+      "category": "Software Engineering",
+      "description": "The practice of developing both the frontend (client-side) and backend (server-side) portions of web applications.",
+      "features": [
+        "End-to-End Architecture",
+        "Database Management",
+        "API Design",
+        "UI Implementation"
+      ],
+      "useCases": [
+        "Web Applications",
+        "SaaS Platforms",
+        "E-commerce Sites"
+      ]
+    },
+    "Python/Django REST APIs": {
+      "name": "Python/Django REST APIs",
+      "category": "Backend Architecture",
+      "description": "Building scalable backend services using Python and the Django REST Framework.",
+      "features": [
+        "Robust Security",
+        "ORM Integration",
+        "Scalability",
+        "Rapid Development"
+      ],
+      "useCases": [
+        "Enterprise Backends",
+        "Mobile App APIs",
+        "Web Services"
+      ]
+    },
+    "AI/ML Integration": {
+      "name": "AI/ML Integration",
+      "category": "Systems Engineering",
+      "description": "The process of embedding artificial intelligence and machine learning models into traditional software applications.",
+      "features": [
+        "Model Deployment",
+        "Inference APIs",
+        "Data Pipelines",
+        "Performance Monitoring"
+      ],
+      "useCases": [
+        "Smart Applications",
+        "Predictive Analytics",
+        "Automated Decision Making"
+      ]
+    },
+    "Cloud Storage Integration": {
+      "name": "Cloud Storage Integration",
+      "category": "Cloud Infrastructure",
+      "description": "Connecting applications to scalable cloud-based object storage services.",
+      "features": [
+        "Secure Uploads",
+        "CDN Distribution",
+        "Scalability",
+        "Backup Solutions"
+      ],
+      "useCases": [
+        "File Sharing Apps",
+        "Media Platforms",
+        "Document Management"
+      ]
+    },
+    "OpenAI API": {
+      "name": "OpenAI API",
+      "category": "AI Services",
+      "description": "Integrating applications directly with OpenAI's massive language models and generative capabilities.",
+      "features": [
+        "Prompt Engineering",
+        "Embeddings",
+        "Fine-tuning",
+        "Semantic Search"
+      ],
+      "useCases": [
+        "AI Chatbots",
+        "Text Generation",
+        "Automated Analysis"
+      ]
+    },
+    "Pinecone / FAISS": {
+      "name": "Vector Databases",
+      "category": "Database Management",
+      "description": "Specialized databases designed to store and quickly query high-dimensional vector embeddings.",
+      "features": [
+        "Similarity Search",
+        "Scalable Indexing",
+        "Real-time Retrieval",
+        "Embedding Storage"
+      ],
+      "useCases": [
+        "Recommendation Engines",
+        "Semantic Search",
+        "RAG Systems"
+      ]
+    },
+    "Java": {
+      "name": "Java",
+      "category": "Programming Language",
+      "description": "A high-level, class-based, object-oriented programming language designed to have as few implementation dependencies as possible.",
+      "features": [
+        "Object-Oriented",
+        "Platform Independent",
+        "Multi-threaded",
+        "Secure"
+      ],
+      "useCases": [
+        "Enterprise Software",
+        "Android Development",
+        "Large-scale Systems"
+      ]
+    },
+    "Android Studio": {
+      "name": "Android Studio",
+      "category": "Development Environment",
+      "description": "The official Integrated Development Environment (IDE) for Android app development.",
+      "features": [
+        "Visual Layout Editor",
+        "APK Analyzer",
+        "Fast Emulator",
+        "Intelligent Code Editor"
+      ],
+      "useCases": [
+        "Mobile App Development",
+        "Android UI Design",
+        "App Profiling"
+      ]
+    },
+    "Firebase": {
+      "name": "Firebase",
+      "category": "Backend-as-a-Service",
+      "description": "A platform developed by Google for creating mobile and web applications with real-time capabilities.",
+      "features": [
+        "Realtime Database",
+        "Authentication",
+        "Cloud Functions",
+        "Hosting"
+      ],
+      "useCases": [
+        "Chat Applications",
+        "Real-time Syncing",
+        "Serverless Apps"
+      ]
+    },
+    "Artificial Intelligence": {
+      "name": "Artificial Intelligence",
+      "category": "Computer Science Field",
+      "description": "The simulation of human intelligence processes by machines, especially computer systems.",
+      "features": [
+        "Learning",
+        "Reasoning",
+        "Self-correction",
+        "Pattern Recognition"
+      ],
+      "useCases": [
+        "Automation",
+        "Predictive Analytics",
+        "Natural Language Processing"
+      ]
+    },
+    "Applied Learning": {
+      "name": "Applied Learning",
+      "category": "Educational Methodology",
+      "description": "An educational approach whereby students learn by engaging in direct application of skills, theories and models.",
+      "features": [
+        "Hands-on Experience",
+        "Real-world Problem Solving",
+        "Practical Application",
+        "Critical Thinking"
+      ],
+      "useCases": [
+        "Internships",
+        "Project-based Learning",
+        "Skill Development"
+      ]
+    },
+    "Project Exposure": {
+      "name": "Project Exposure",
+      "category": "Professional Experience",
+      "description": "Gaining practical experience and insight through direct involvement in real-world professional projects.",
+      "features": [
+        "Industry Standards",
+        "Team Collaboration",
+        "Deadline Management",
+        "Lifecycle Understanding"
+      ],
+      "useCases": [
+        "Career Development",
+        "Portfolio Building",
+        "Skill Demonstration"
+      ]
+    },
+    "Machine Learning": {
+      "name": "Machine Learning",
+      "category": "Artificial Intelligence",
+      "description": "A subset of AI focused on building systems that learn from data and improve their performance over time.",
+      "features": [
+        "Statistical Modeling",
+        "Predictive Analytics",
+        "Algorithmic Training",
+        "Pattern Recognition"
+      ],
+      "useCases": [
+        "Recommendation Systems",
+        "Fraud Detection",
+        "Image Recognition"
+      ]
+    },
+    "Model Building": {
+      "name": "Model Building",
+      "category": "Data Science",
+      "description": "The process of creating a mathematical representation of a real-world process using machine learning algorithms.",
+      "features": [
+        "Algorithm Selection",
+        "Hyperparameter Tuning",
+        "Training",
+        "Validation"
+      ],
+      "useCases": [
+        "Predictive Modeling",
+        "Classification",
+        "Regression Analysis"
+      ]
+    },
+    "Data Analysis": {
+      "name": "Data Analysis",
+      "category": "Data Science",
+      "description": "The process of inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information.",
+      "features": [
+        "Statistical Analysis",
+        "Data Cleaning",
+        "Trend Identification",
+        "Reporting"
+      ],
+      "useCases": [
+        "Business Intelligence",
+        "Market Research",
+        "Performance Tracking"
+      ]
+    },
+    "Programming Fundamentals": {
+      "name": "Programming Fundamentals",
+      "category": "Computer Science",
+      "description": "The foundational concepts and logic required to write effective computer code in any language.",
+      "features": [
+        "Variables & Data Types",
+        "Control Structures",
+        "Functions",
+        "Object-Oriented Concepts"
+      ],
+      "useCases": [
+        "Algorithm Design",
+        "Software Development",
+        "Problem Solving"
+      ]
+    },
+    "Problem Solving": {
+      "name": "Problem Solving",
+      "category": "Soft Skill",
+      "description": "The process of finding solutions to difficult or complex issues through logical analysis and creative thinking.",
+      "features": [
+        "Analytical Thinking",
+        "Debugging",
+        "Algorithmic Logic",
+        "Optimization"
+      ],
+      "useCases": [
+        "Software Debugging",
+        "Architecture Design",
+        "Process Improvement"
+      ]
+    },
+    "HTML": {
+      "name": "HTML",
+      "category": "Markup Language",
+      "description": "The standard markup language for documents designed to be displayed in a web browser.",
+      "features": [
+        "Semantic Structure",
+        "Media Embedding",
+        "Forms",
+        "Accessibility"
+      ],
+      "useCases": [
+        "Web Page Structure",
+        "Email Templates",
+        "UI Frameworks"
+      ]
+    },
+    "CSS": {
+      "name": "CSS",
+      "category": "Styling Language",
+      "description": "A style sheet language used for describing the presentation of a document written in HTML.",
+      "features": [
+        "Layout Control",
+        "Animations",
+        "Responsive Design",
+        "Visual Aesthetics"
+      ],
+      "useCases": [
+        "Website Styling",
+        "UI Component Design",
+        "Theming"
+      ]
+    },
+    "Responsive Web Design": {
+      "name": "Responsive Web Design",
+      "category": "UI/UX Concept",
+      "description": "An approach to web design that makes web pages render well on a variety of devices and window or screen sizes.",
+      "features": [
+        "Fluid Grids",
+        "Flexible Images",
+        "Media Queries",
+        "Mobile-First Strategy"
+      ],
+      "useCases": [
+        "Cross-Device Compatibility",
+        "Mobile Web Browsing",
+        "Accessible UI"
+      ]
+    },
+    "Data Science": {
+      "name": "Data Science",
+      "category": "Field of Study",
+      "description": "An interdisciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge from data.",
+      "features": [
+        "Data Mining",
+        "Statistical Analysis",
+        "Machine Learning",
+        "Data Visualization"
+      ],
+      "useCases": [
+        "Predictive Analytics",
+        "Strategic Planning",
+        "Scientific Research"
+      ]
+    },
+    "Visualization": {
+      "name": "Data Visualization",
+      "category": "Data Science",
+      "description": "The graphical representation of information and data to provide accessible ways to see and understand trends.",
+      "features": [
+        "Charts & Graphs",
+        "Interactive Dashboards",
+        "Visual Storytelling",
+        "Geospatial Mapping"
+      ],
+      "useCases": [
+        "Business Reports",
+        "Analytics Dashboards",
+        "Scientific Presentations"
+      ]
+    },
+    "ML Basics": {
+      "name": "Machine Learning Basics",
+      "category": "Artificial Intelligence",
+      "description": "The foundational algorithms and concepts required to understand and implement basic machine learning models.",
+      "features": [
+        "Linear Regression",
+        "Classification",
+        "Clustering",
+        "Model Evaluation"
+      ],
+      "useCases": [
+        "Introductory AI Projects",
+        "Data Analysis",
+        "Predictive Modeling"
+      ]
     }
   }
 }
