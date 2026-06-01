@@ -2074,6 +2074,104 @@
         "Data Analysis",
         "Predictive Modeling"
       ]
+    },
+    "FAISS": {
+      "name": "FAISS",
+      "category": "Database / Vector Search",
+      "description": "Facebook AI Similarity Search (FAISS) is a powerful library for efficient similarity search and clustering of dense vectors.",
+      "features": [
+        "Vector Similarity Search",
+        "High Performance",
+        "GPU Support",
+        "Scalable Indexing"
+      ],
+      "useCases": [
+        "Information Retrieval",
+        "Recommendation Systems",
+        "RAG Applications"
+      ]
+    },
+    "LLM": {
+      "name": "LLM (Large Language Model)",
+      "category": "AI / Machine Learning",
+      "description": "Large Language Models are advanced AI systems designed to understand, generate, and interact with human language at scale.",
+      "features": [
+        "Natural Language Processing",
+        "Contextual Understanding",
+        "Text Generation",
+        "Zero-Shot Learning"
+      ],
+      "useCases": [
+        "Chatbots",
+        "Content Generation",
+        "Code Assistance",
+        "RAG Architecture"
+      ]
+    },
+    "LLMs": {
+      "name": "LLMs (Large Language Models)",
+      "category": "AI / Machine Learning",
+      "description": "Large Language Models are advanced AI systems designed to understand, generate, and interact with human language at scale.",
+      "features": [
+        "Natural Language Processing",
+        "Contextual Understanding",
+        "Text Generation",
+        "Zero-Shot Learning"
+      ],
+      "useCases": [
+        "Chatbots",
+        "Content Generation",
+        "Code Assistance",
+        "RAG Architecture"
+      ]
+    },
+    "RAG": {
+      "name": "RAG (Retrieval-Augmented Generation)",
+      "category": "AI Architecture",
+      "description": "Retrieval-Augmented Generation combines information retrieval with text generation to produce accurate, context-aware responses using external knowledge bases.",
+      "features": [
+        "Contextual Accuracy",
+        "Dynamic Knowledge",
+        "Reduced Hallucination",
+        "Source Attribution"
+      ],
+      "useCases": [
+        "Enterprise Search",
+        "Knowledge Base Assistants",
+        "Educational Tutors"
+      ]
+    },
+    "Speech Recognition": {
+      "name": "Speech Recognition",
+      "category": "AI / Audio Processing",
+      "description": "Speech Recognition technology converts spoken language into text, enabling voice-driven interfaces and real-time audio transcriptions.",
+      "features": [
+        "Audio Processing",
+        "Real-Time Transcription",
+        "Multi-Language Support",
+        "Noise Robustness"
+      ],
+      "useCases": [
+        "Voice Assistants",
+        "Accessibility Tools",
+        "Automated Dictation"
+      ]
+    },
+    "TTS": {
+      "name": "TTS (Text-to-Speech)",
+      "category": "AI / Audio Processing",
+      "description": "Text-to-Speech (TTS) synthesizes natural, human-like speech from text input, enabling applications to communicate audibly.",
+      "features": [
+        "Natural Voice Synthesis",
+        "Prosody Control",
+        "Multiple Voices",
+        "Real-Time Audio Generation"
+      ],
+      "useCases": [
+        "Voice Assistants",
+        "Screen Readers",
+        "Interactive Audio Systems"
+      ]
     }
   }
 }
