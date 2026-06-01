@@ -400,9 +400,54 @@ document.addEventListener('DOMContentLoaded', () => {
     reveal();
   }
 
+  function initCounters() {
+    const counters = document.querySelectorAll('.stat-num, #stats .skill-category h3');
+
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counter = entry.target;
+          
+          if (counter.classList.contains('animated')) return;
+          counter.classList.add('animated');
+
+          const text = counter.textContent.trim();
+          const match = text.match(/^(\d+)(.*)$/);
+          if (!match) return;
+
+          const target = parseInt(match[1], 10);
+          const suffix = match[2] || '';
+          
+          const duration = 3500; // 3.5 seconds
+          const frameRate = 30; // ms per frame
+          const totalFrames = duration / frameRate;
+          const increment = target / totalFrames;
+          let current = 0;
+          
+          counter.textContent = '0' + suffix;
+
+          const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+              counter.textContent = target + suffix;
+              clearInterval(timer);
+            } else {
+              counter.textContent = Math.floor(current) + suffix;
+            }
+          }, frameRate);
+          
+          obs.unobserve(counter);
+        }
+      });
+    }, { threshold: 0.1 });
+    
+    counters.forEach(c => observer.observe(c));
+  }
+
   hydrateFromApi().finally(() => {
     initThemeToggle();
     initInteractions();
+    initCounters();
     setTimeout(type, 1000);
   });
 });
