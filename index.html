@@ -493,10 +493,40 @@
         <p class="copyright">&copy; 2026 Ruturaj Patil. All rights reserved.</p>
     </footer>
 
+    <!-- Technology Details Modal -->
+    <div id="tech-modal" class="modal-overlay hidden">
+        <div class="modal-content glass-panel">
+            <button id="close-tech-modal" class="modal-close"><i class="fas fa-times"></i></button>
+            
+            <div class="tech-modal-header">
+                <i id="tech-modal-icon" class=""></i>
+                <div class="tech-modal-title">
+                    <h2 id="tech-modal-name">Technology Name</h2>
+                    <span id="tech-modal-category" class="project-overline">Category</span>
+                </div>
+            </div>
+            
+            <div class="tech-modal-body">
+                <p id="tech-modal-desc" class="tech-desc">Description goes here.</p>
+                
+                <div class="tech-modal-grid">
+                    <div class="tech-modal-section">
+                        <h3>Key Features</h3>
+                        <ul id="tech-modal-features" class="task-list">
+                            <!-- Populated via JS -->
+                        </ul>
+                    </div>
+                    <div class="tech-modal-section">
+                        <h3>Use Cases</h3>
+                        <ul id="tech-modal-usecases" class="task-list">
+                            <!-- Populated via JS -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="main.js"></script>
 </body>
 </html>
-
-
-
-

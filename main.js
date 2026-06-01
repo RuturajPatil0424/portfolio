@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <div class="skill-items-grid">
                   ${(c.items || []).map((it) => `
-                    <div class="skill-item">
+                    <div class="skill-item" data-tech="${esc(it.name || '')}">
                       <i class="${esc(it.icon || '')} skill-icon"></i>
                       <div class="skill-info">
                         <span class="skill-name">${esc(it.name || '')}</span>
@@ -318,6 +318,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const res = await fetch('/api/content/published');
       if (!res.ok) throw new Error('Published API unavailable');
       const data = await res.json();
+      window.globalData = data;
       renderPublished(data);
       return;
     } catch (apiErr) {
@@ -325,7 +326,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const res = await fetch('./data/published.json');
         if (!res.ok) throw new Error('Local JSON unavailable');
         const data = await res.json();
-        renderPublished(data);
+      window.globalData = data;
+      renderPublished(data);
       } catch (localErr) {
         console.warn('Unable to hydrate published content from API and local JSON.', {
           apiError: apiErr?.message || apiErr,
@@ -454,10 +456,61 @@ document.addEventListener('DOMContentLoaded', () => {
     counters.forEach(c => observer.observe(c));
   }
 
+  
+  function initTechModals() {
+    const modal = document.getElementById('tech-modal');
+    if (!modal) return;
+    
+    const closeBtn = document.getElementById('close-tech-modal');
+    const nameEl = document.getElementById('tech-modal-name');
+    const categoryEl = document.getElementById('tech-modal-category');
+    const iconEl = document.getElementById('tech-modal-icon');
+    const descEl = document.getElementById('tech-modal-desc');
+    const featuresList = document.getElementById('tech-modal-features');
+    const usecasesList = document.getElementById('tech-modal-usecases');
+
+    function openModal(techName) {
+      const details = window.globalData?.techDetails?.[techName];
+      if (!details) return;
+
+      nameEl.textContent = details.name || techName;
+      categoryEl.textContent = details.category || 'Technology';
+      descEl.textContent = details.description || '';
+      
+      // Try to find the icon from the DOM card that was clicked
+      const card = document.querySelector(`.skill-item[data-tech="${techName}"] .skill-icon`);
+      iconEl.className = card ? card.className : '';
+      
+      featuresList.innerHTML = (details.features || []).map(f => `<li>${f}</li>`).join('');
+      usecasesList.innerHTML = (details.useCases || []).map(u => `<li>${u}</li>`).join('');
+
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden'; // prevent scrolling
+    }
+
+    function closeModal() {
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+
+    document.querySelectorAll('.skill-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const tech = item.getAttribute('data-tech');
+        if (tech) openModal(tech);
+      });
+    });
+  }
+
   hydrateFromApi().finally(() => {
     initThemeToggle();
     initInteractions();
     initCounters();
+    initTechModals();
     setTimeout(type, 1000);
   });
 });
