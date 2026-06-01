@@ -401,9 +401,7 @@
       ],
       "repoUrl": "https://github.com/RuturajPatil0424",
       "liveUrl": "",
-      "gallery": [
-        "/uploads/Ruturaj_Patil_Training_Completion.jpg"
-      ]
+      "gallery": []
     },
     {
       "overline": "AI Recruitment",
@@ -429,9 +427,7 @@
       ],
       "repoUrl": "https://github.com/RuturajPatil0424",
       "liveUrl": "",
-      "gallery": [
-        "/uploads/Ruturaj_Patil_Training_Completion.jpg"
-      ]
+      "gallery": []
     },
     {
       "overline": "Conversational AI",
@@ -457,9 +453,7 @@
       ],
       "repoUrl": "https://github.com/RuturajPatil0424",
       "liveUrl": "",
-      "gallery": [
-        "/uploads/Ruturaj_Patil_Training_Completion.jpg"
-      ]
+      "gallery": []
     },
     {
       "overline": "Finance App",
@@ -483,9 +477,7 @@
       ],
       "repoUrl": "https://github.com/RuturajPatil0424",
       "liveUrl": "",
-      "gallery": [
-        "/uploads/Ruturaj_Patil_Training_Completion.jpg"
-      ]
+      "gallery": []
     },
     {
       "overline": "ML System",
@@ -510,9 +502,7 @@
       ],
       "repoUrl": "https://github.com/RuturajPatil0424",
       "liveUrl": "",
-      "gallery": [
-        "/uploads/Ruturaj_Patil_Training_Completion.jpg"
-      ]
+      "gallery": []
     },
     {
       "overline": "Live Web App",
@@ -536,9 +526,7 @@
       ],
       "repoUrl": "https://github.com/RuturajPatil0424",
       "liveUrl": "",
-      "gallery": [
-        "/uploads/Ruturaj_Patil_Training_Completion.jpg"
-      ]
+      "gallery": []
     },
     {
       "overline": "AI Engine",
@@ -564,9 +552,7 @@
       ],
       "repoUrl": "https://github.com/RuturajPatil0424",
       "liveUrl": "",
-      "gallery": [
-        "/uploads/Ruturaj_Patil_Training_Completion.jpg"
-      ]
+      "gallery": []
     },
     {
       "overline": "Mobile App",
@@ -590,9 +576,7 @@
       ],
       "repoUrl": "https://github.com/RuturajPatil0424",
       "liveUrl": "",
-      "gallery": [
-        "/uploads/Ruturaj_Patil_Training_Completion.jpg"
-      ]
+      "gallery": []
     }
   ],
   "contact": {
@@ -635,9 +619,9 @@
         "Applied Learning",
         "Project Exposure"
       ],
-      "fileUrl": "/uploads/Ruturaj_Patil_Training_Completion.jpg",
+      "fileUrl": "assets/images/Ruturaj_Patil_Training_Completion.jpg",
       "previewType": "image",
-      "thumbUrl": "/uploads/Ruturaj_Patil_Training_Completion.jpg",
+      "thumbUrl": "assets/images/Ruturaj_Patil_Training_Completion.jpg",
       "description": "Completed a structured AI training program focused on practical AI fundamentals and implementation."
     },
     {
@@ -651,7 +635,7 @@
         "Model Building",
         "Data Analysis"
       ],
-      "fileUrl": "/uploads/UC-7d140200-3a16-450c-bc24-c3e030f10808.pdf",
+      "fileUrl": "assets/pdf/UC-7d140200-3a16-450c-bc24-c3e030f10808.pdf",
       "previewType": "pdf",
       "thumbUrl": "",
       "description": "Certificate validating applied machine learning concepts and model development workflow."
@@ -667,7 +651,7 @@
         "Programming Fundamentals",
         "Problem Solving"
       ],
-      "fileUrl": "/uploads/English_Complete_2025_Python_Bootcamp_Learn_Python_from_Scratch_Certificate.pdf",
+      "fileUrl": "assets/pdf/English_Complete_2025_Python_Bootcamp_Learn_Python_from_Scratch_Certificate.pdf",
       "previewType": "pdf",
       "thumbUrl": "",
       "description": "Comprehensive Python bootcamp covering beginner to intermediate programming concepts."
@@ -684,7 +668,7 @@
         "JavaScript",
         "Responsive Web Design"
       ],
-      "fileUrl": "/uploads/English_Ultimate_Web_Development_Course_2025_Build_Modern_Websites_Certificate.pdf",
+      "fileUrl": "assets/pdf/English_Ultimate_Web_Development_Course_2025_Build_Modern_Websites_Certificate.pdf",
       "previewType": "pdf",
       "thumbUrl": "",
       "description": "Modern web development course focused on building responsive and production-ready websites."
@@ -701,7 +685,7 @@
         "Visualization",
         "ML Basics"
       ],
-      "fileUrl": "/uploads/The_Ultimate_Job_Ready_Data_Science_Course_Certificate.pdf",
+      "fileUrl": "assets/pdf/The_Ultimate_Job_Ready_Data_Science_Course_Certificate.pdf",
       "previewType": "pdf",
       "thumbUrl": "",
       "description": "Job-focused data science coursework with practical exercises and end-to-end analytics workflow."

@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 
 const ROOT = __dirname;
 const DATA_DIR = path.join(ROOT, 'data');
-const UPLOAD_DIR = path.join(ROOT, 'uploads');
+const ASSETS_DIR = path.join(ROOT, 'assets');
 const PUBLISHED_PATH = path.join(DATA_DIR, 'published.json');
 const DRAFT_PATH = path.join(DATA_DIR, 'draft.json');
 const MEDIA_PATH = path.join(DATA_DIR, 'media.json');
@@ -38,11 +38,17 @@ app.use(session({
   cookie: { httpOnly: true, sameSite: 'lax', secure: false, maxAge: 1000 * 60 * 60 * 8 }
 }));
 
-app.use('/uploads', express.static(UPLOAD_DIR));
+app.use('/assets', express.static(ASSETS_DIR));
 app.use(express.static(ROOT));
 
 const storage = multer.diskStorage({
-  destination: (_, __, cb) => cb(null, UPLOAD_DIR),
+  destination: (_, file, cb) => {
+    const ext = file.originalname.split('.').pop().toLowerCase();
+    const folder = ext === 'pdf' ? 'pdf' : 'images';
+    const dest = path.join(ASSETS_DIR, folder);
+    if (!fs.existsSync(dest)) fs.mkdirSync(dest, { recursive: true });
+    cb(null, dest);
+  },
   filename: (_, file, cb) => {
     const clean = file.originalname.replace(/[^a-zA-Z0-9._-]/g, '_');
     cb(null, `${Date.now()}-${clean}`);
@@ -113,13 +119,15 @@ app.post('/api/content/reset', requireAuth, (_, res) => {
 app.post('/api/media/upload', requireAuth, upload.single('file'), (req, res) => {
   if (!req.file) return res.status(400).json({ error: 'No file uploaded' });
   const media = readJson(MEDIA_PATH);
+  const ext = req.file.originalname.split('.').pop().toLowerCase();
+  const folder = ext === 'pdf' ? 'pdf' : 'images';
   const item = {
     id: `${Date.now()}`,
     originalName: req.file.originalname,
     filename: req.file.filename,
     mimeType: req.file.mimetype,
     size: req.file.size,
-    url: `/uploads/${req.file.filename}`,
+    url: `assets/${folder}/${req.file.filename}`,
     createdAt: new Date().toISOString()
   };
   media.unshift(item);
@@ -137,7 +145,9 @@ app.delete('/api/media/:id', requireAuth, (req, res) => {
   if (index < 0) return res.status(404).json({ error: 'Not found' });
 
   const [item] = media.splice(index, 1);
-  const filePath = path.join(UPLOAD_DIR, item.filename);
+  const ext = item.filename.split('.').pop().toLowerCase();
+  const folder = ext === 'pdf' ? 'pdf' : 'images';
+  const filePath = path.join(ASSETS_DIR, folder, item.filename);
   if (fs.existsSync(filePath)) fs.unlinkSync(filePath);
 
   writeJson(MEDIA_PATH, media);

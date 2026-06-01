@@ -203,12 +203,14 @@ document.addEventListener('DOMContentLoaded', async () => {
           </div>
         </section>
 
+        ${(project.gallery && project.gallery.length > 0) ? `
         <section class="glass-panel mt-3">
           <h3>Project Gallery</h3>
           <div class="gallery-grid">
-            ${(project.gallery || []).map((img, idx) => `<img src="${esc(img)}" alt="${esc(project.title || 'Project')} screenshot ${idx + 1}" />`).join('')}
+            ${project.gallery.map((img, idx) => `<img src="${esc(img)}" alt="${esc(project.title || 'Project')} screenshot ${idx + 1}" />`).join('')}
           </div>
         </section>
+        ` : ''}
       </article>
     `;
   } catch (_) {
