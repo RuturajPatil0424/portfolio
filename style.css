@@ -155,10 +155,20 @@ main {
 
 .section {
     padding: var(--section-pad);
-    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+/* Stats section: tighter gap below Featured Projects */
+#stats.section {
+    padding-top: 20px;
+    min-height: auto;
+}
+
+/* Contact section: no forced min-height */
+.contact-section.section {
+    min-height: auto;
 }
 
 .section-title {

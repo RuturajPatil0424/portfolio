@@ -41,7 +41,7 @@
       {
         "id": "blog",
         "label": "Blog",
-        "visible": true,
+        "visible": false,
         "order": 7
       },
       {
@@ -485,7 +485,7 @@
     },
     {
       "id": "blog",
-      "visible": true,
+      "visible": false,
       "order": 7,
       "labelNo": "08.",
       "title": "Blog Topics",
