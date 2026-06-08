@@ -253,6 +253,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       </article>
     `;
     initTechModals();
+    initLightbox();
   } catch (_) {
     fallback('Failed to load details', 'There was a problem loading this page. Please refresh and try again.');
   }
@@ -308,99 +309,132 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
 
-  function initTechModals() {
-    const modal = document.getElementById('tech-modal');
+  function initLightbox() {
+    const modal = document.getElementById('lightbox-modal');
     if (!modal) return;
-    
-    const closeBtn = document.getElementById('close-tech-modal');
-    const nameEl = document.getElementById('tech-modal-name');
-    const categoryEl = document.getElementById('tech-modal-category');
-    const iconEl = document.getElementById('tech-modal-icon');
-    const descEl = document.getElementById('tech-modal-desc');
-    const featuresList = document.getElementById('tech-modal-features');
-    const usecasesList = document.getElementById('tech-modal-usecases');
 
-    function openModal(techName) {
-      const details = window.globalData?.techDetails?.[techName];
-      if (!details) return;
+    const closeBtn = document.getElementById('lightbox-close');
+    const prevBtn = document.getElementById('lightbox-prev');
+    const nextBtn = document.getElementById('lightbox-next');
+    const imgEl = document.getElementById('lightbox-img');
+    const captionEl = document.getElementById('lightbox-caption');
 
-      nameEl.textContent = details.name || techName;
-      categoryEl.textContent = details.category || 'Technology';
-      descEl.textContent = details.description || '';
+    let currentIndex = -1;
+    let galleryImages = [];
+
+    // Helper to get clean, premium captions based on the filename/path
+    function getCleanCaption(src) {
+      const decodedSrc = decodeURIComponent(src);
+      if (decodedSrc.includes('dashboard')) return 'Dashboard Overview';
+      if (decodedSrc.includes('campaigns')) return 'Active Campaigns & Configurations';
+      if (decodedSrc.includes('leads')) return 'Registered Leads Browser';
+      if (decodedSrc.includes('deals')) return 'Deals Kanban Stage Pipeline';
+      if (decodedSrc.includes('tasks')) return 'Tasks Queue Scheduler & Dispatcher';
       
-      const card = document.querySelector(`.skill-item[data-tech="${techName}"] .skill-icon`);
-      iconEl.className = card ? card.className : '';
-      
-      featuresList.innerHTML = (details.features || []).map(f => `<li>${f}</li>`).join('');
-      usecasesList.innerHTML = (details.useCases || []).map(u => `<li>${u}</li>`).join('');
+      // Fallback formatting
+      const filename = decodedSrc.split('/').pop().split('.')[0];
+      return filename.replace(/[_-]/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    }
 
+    function showImage(index) {
+      if (index < 0 || index >= galleryImages.length) return;
+      currentIndex = index;
+      
+      const targetSrc = galleryImages[index].getAttribute('src');
+      
+      // Remove loaded state to reset animation transition
+      imgEl.classList.remove('loaded');
+      
+      // Update image and caption
+      imgEl.src = targetSrc;
+      captionEl.textContent = getCleanCaption(targetSrc);
+
+      imgEl.onload = () => {
+        imgEl.classList.add('loaded');
+      };
+      
+      if (imgEl.complete) {
+        imgEl.classList.add('loaded');
+      }
+
+      // Hide navigation arrows if there is only 1 image
+      if (galleryImages.length <= 1) {
+        prevBtn.style.display = 'none';
+        nextBtn.style.display = 'none';
+      } else {
+        prevBtn.style.display = '';
+        nextBtn.style.display = '';
+      }
+    }
+
+    function openLightbox(index) {
+      galleryImages = Array.from(document.querySelectorAll('.gallery-grid img'));
+      if (galleryImages.length === 0) return;
+      
+      showImage(index);
       modal.classList.remove('hidden');
       document.body.style.overflow = 'hidden';
     }
 
-    function closeModal() {
+    function closeLightbox() {
       modal.classList.add('hidden');
       document.body.style.overflow = '';
+      imgEl.classList.remove('loaded');
+      imgEl.src = '';
     }
 
-    closeBtn.addEventListener('click', closeModal);
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) closeModal();
+    function nextImage() {
+      if (galleryImages.length <= 1) return;
+      const nextIdx = (currentIndex + 1) % galleryImages.length;
+      showImage(nextIdx);
+    }
+
+    function prevImage() {
+      if (galleryImages.length <= 1) return;
+      const prevIdx = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+      showImage(prevIdx);
+    }
+
+    // Delegation to handle clicking on dynamic gallery grid images
+    document.addEventListener('click', (e) => {
+      if (e.target.matches('.gallery-grid img')) {
+        const images = Array.from(document.querySelectorAll('.gallery-grid img'));
+        const index = images.indexOf(e.target);
+        if (index !== -1) {
+          openLightbox(index);
+        }
+      }
     });
 
-    document.querySelectorAll('.skill-item').forEach(item => {
-      item.addEventListener('click', () => {
-        const tech = item.getAttribute('data-tech');
-        if (tech) openModal(tech);
-      });
-    });
-  }
-
-
-  function initTechModals() {
-    const modal = document.getElementById('tech-modal');
-    if (!modal) return;
+    closeBtn.addEventListener('click', closeLightbox);
     
-    const closeBtn = document.getElementById('close-tech-modal');
-    const nameEl = document.getElementById('tech-modal-name');
-    const categoryEl = document.getElementById('tech-modal-category');
-    const iconEl = document.getElementById('tech-modal-icon');
-    const descEl = document.getElementById('tech-modal-desc');
-    const featuresList = document.getElementById('tech-modal-features');
-    const usecasesList = document.getElementById('tech-modal-usecases');
-
-    function openModal(techName) {
-      const details = window.globalData?.techDetails?.[techName];
-      if (!details) return;
-
-      nameEl.textContent = details.name || techName;
-      categoryEl.textContent = details.category || 'Technology';
-      descEl.textContent = details.description || '';
-      
-      const card = document.querySelector(`.skill-item[data-tech="${techName}"] .skill-icon`);
-      iconEl.className = card ? card.className : '';
-      
-      featuresList.innerHTML = (details.features || []).map(f => `<li>${f}</li>`).join('');
-      usecasesList.innerHTML = (details.useCases || []).map(u => `<li>${u}</li>`).join('');
-
-      modal.classList.remove('hidden');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeModal() {
-      modal.classList.add('hidden');
-      document.body.style.overflow = '';
-    }
-
-    closeBtn.addEventListener('click', closeModal);
+    // Close on overlay backgrounds clicks
     modal.addEventListener('click', (e) => {
-      if (e.target === modal) closeModal();
+      if (e.target === modal || e.target.classList.contains('lightbox-content')) {
+        closeLightbox();
+      }
     });
 
-    document.querySelectorAll('.skill-item').forEach(item => {
-      item.addEventListener('click', () => {
-        const tech = item.getAttribute('data-tech');
-        if (tech) openModal(tech);
-      });
+    nextBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      nextImage();
+    });
+
+    prevBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      prevImage();
+    });
+
+    // Keyboard arrow keys and Escape key support
+    document.addEventListener('keydown', (e) => {
+      if (modal.classList.contains('hidden')) return;
+      
+      if (e.key === 'Escape') {
+        closeLightbox();
+      } else if (e.key === 'ArrowRight') {
+        nextImage();
+      } else if (e.key === 'ArrowLeft') {
+        prevImage();
+      }
     });
   }

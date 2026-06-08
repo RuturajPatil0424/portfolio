@@ -198,7 +198,7 @@
       "title": "Technical Skills",
       "categories": [
         {
-          "emoji": "\u2699\ufe0f",
+          "emoji": "⚙️",
           "title": "Backend Development",
           "items": [
             {
@@ -235,7 +235,7 @@
           ]
         },
         {
-          "emoji": "\ud83c\udf10",
+          "emoji": "🌐",
           "title": "Frontend Development",
           "items": [
             {
@@ -271,7 +271,7 @@
           ]
         },
         {
-          "emoji": "\ud83d\uddc4\ufe0f",
+          "emoji": "🗄️",
           "title": "Database",
           "items": [
             {
@@ -307,7 +307,7 @@
           ]
         },
         {
-          "emoji": "\ud83e\udde0",
+          "emoji": "🧠",
           "title": "AI / Machine Learning",
           "items": [
             {
@@ -365,7 +365,7 @@
           ]
         },
         {
-          "emoji": "\u2601\ufe0f",
+          "emoji": "☁️",
           "title": "DevOps & Cloud",
           "items": [
             {
@@ -519,6 +519,73 @@
   ],
   "projects": [
     {
+      "id": "openoutreach-gui",
+      "overline": "Open Source — B2B Automation",
+      "title": "OpenOutreach GUI — LinkedIn Automation CRM & Dashboard",
+      "desc": "Autonomous open-source LinkedIn automation platform for B2B lead generation featuring a complete web-based CRM, Kanban deal pipeline, AI-powered prospect qualification, and a live conversations inbox.",
+      "role": "Full-Stack & ML Developer",
+      "features": [
+        "📊 Interactive Dashboard: Live telemetry of campaign stats, task queue status, daily limits, and daemon runtime.",
+        "🚀 Onboarding Wizard: Step-by-step visual setup for campaign goals, LLM API keys, and LinkedIn account.",
+        "🎯 Campaign Manager: Search keywords, seed profiles, campaign fractions, and outcome tracking.",
+        "📋 Visual Kanban CRM: Drag-and-drop board tracking prospects across stages — Qualified → Connected → Completed.",
+        "💬 Conversations Inbox: Integrated chat console to view AI-generated pitches and track response sentiments.",
+        "⚙️ Settings & Diagnostics: Rate limits, LLM endpoint testing (OpenAI, Anthropic, Gemini), and timezone control."
+      ],
+      "outcomes": [
+        "Replaces complex CLI workflows with an intuitive visual dashboard for non-technical users.",
+        "Demonstrates expertise in Django full-stack development, ML-powered automation, stealth browser engineering, and CRM design."
+      ],
+      "repoUrl": "https://github.com/RuturajPatil0424/OpenOutreach-GUI",
+      "liveUrl": "",
+      "gallery": [
+        "assets/images/openoutreach_dashboard.png",
+        "assets/images/openoutreach_campaigns.png",
+        "assets/images/openoutreach_leads.png",
+        "assets/images/openoutreach_deals.png",
+        "assets/images/openoutreach_tasks.png"
+      ],
+      "problemStatement": "B2B lead generation on LinkedIn typically requires expensive SaaS tools or complex command-line automation. OpenOutreach GUI solves this by providing a free, self-hosted, visual web panel on top of a Bayesian active-learning engine — enabling anyone to run autonomous outreach campaigns with full CRM capabilities.",
+      "architecture": [
+        "Frontend: Django Templates, JavaScript, HTML5, CSS3",
+        "Backend: Python 3.12+, Django, Celery Task Queue",
+        "AI/ML: Gaussian Process Regressor, LLM APIs (OpenAI, Anthropic, Gemini)",
+        "Automation: Playwright Stealth Browser",
+        "Database: PostgreSQL / SQLite",
+        "DevOps: Docker, Docker Compose, Makefile"
+      ],
+      "security": [
+        "Self-hosted with no third-party data sharing",
+        "Stealth browser automation to minimize detection",
+        "Rate limiting and daily pacing controls",
+        "Credential encryption and secure API key storage"
+      ],
+      "highlights": [
+        "Built a complete Django web CRM panel on top of an open-source ML automation engine",
+        "Implemented a visual Kanban pipeline for drag-and-drop lead management",
+        "Integrated LLM-powered prospect qualification and multi-turn follow-up messaging",
+        "Designed a real-time dashboard with daemon control and campaign analytics",
+        "Dockerized the full stack for one-command deployment"
+      ],
+      "skills": [
+        "Full-Stack Development",
+        "Machine Learning Integration",
+        "Browser Automation",
+        "CRM Design",
+        "Open Source Development"
+      ],
+      "tech": [
+        "Python",
+        "Django",
+        "Playwright",
+        "PostgreSQL",
+        "Docker",
+        "ML/AI",
+        "LLM APIs",
+        "Celery"
+      ]
+    },
+    {
       "overline": "Live Web App",
       "title": "Virtual Try Room AI-Powered Fashion E-Commerce Platform",
       "desc": "A full-stack AI-powered fashion e-commerce platform that enables users to virtually try clothing items before purchasing using computer vision and AI-driven image processing.",
@@ -642,13 +709,13 @@
       "desc": "An intelligent educational platform that combines RAG, vector search, and LLMs to deliver personalized learning support and intelligent academic assistance.",
       "role": "AI Developer",
       "features": [
-        "\ud83c\udf93 Intelligent Learning Assistant: Natural language question answering and context-aware educational conversations",
-        "\ud83d\udcda Document-Based Learning: Upload and process study materials for contextual answers",
-        "\ud83e\udde0 Retrieval-Augmented Generation (RAG): Semantic search using vector embeddings",
-        "\ud83d\udcac Conversational Learning Experience: Interactive AI tutor interface with multi-turn conversations",
-        "\ud83d\udcd6 Smart Knowledge Base: Automated document indexing and educational resource management",
-        "\u26a1 Real-Time Assistance: Instant response generation and fast document retrieval",
-        "\ud83d\udd12 Secure Learning Environment: Secure document management and student data protection"
+        "🎓 Intelligent Learning Assistant: Natural language question answering and context-aware educational conversations",
+        "📚 Document-Based Learning: Upload and process study materials for contextual answers",
+        "🧠 Retrieval-Augmented Generation (RAG): Semantic search using vector embeddings",
+        "💬 Conversational Learning Experience: Interactive AI tutor interface with multi-turn conversations",
+        "📖 Smart Knowledge Base: Automated document indexing and educational resource management",
+        "⚡ Real-Time Assistance: Instant response generation and fast document retrieval",
+        "🔒 Secure Learning Environment: Secure document management and student data protection"
       ],
       "outcomes": [
         "Improved student learning efficiency and faster access to educational information",
@@ -783,12 +850,12 @@
       "desc": "A comprehensive healthcare billing platform designed to streamline patient billing, insurance claim processing, payment tracking, denial management, and financial reporting.",
       "role": "Full-Stack Developer",
       "features": [
-        "\ud83c\udfe5 Patient & Provider Management: Patient registration, insurance tracking, and physician management.",
-        "\ud83d\udccb Medical Coding: ICD-10/CPT code management and automated charge entry workflows.",
-        "\ud83d\udcb3 Insurance Claim Processing: Electronic claim creation, submission workflow, and real-time tracking.",
-        "\ud83d\udd04 Revenue Cycle Management: End-to-end billing lifecycle tracking and accounts receivable management.",
-        "\ud83d\udeab Denial Management: Denial detection, root cause analysis, and appeal workflow tracking.",
-        "\ud83d\udcb0 Financial Management: Payment posting, reconciliation, revenue tracking, and custom reports."
+        "🏥 Patient & Provider Management: Patient registration, insurance tracking, and physician management.",
+        "📋 Medical Coding: ICD-10/CPT code management and automated charge entry workflows.",
+        "💳 Insurance Claim Processing: Electronic claim creation, submission workflow, and real-time tracking.",
+        "🔄 Revenue Cycle Management: End-to-end billing lifecycle tracking and accounts receivable management.",
+        "🚫 Denial Management: Denial detection, root cause analysis, and appeal workflow tracking.",
+        "💰 Financial Management: Payment posting, reconciliation, revenue tracking, and custom reports."
       ],
       "outcomes": [
         "Reduces claim processing time by up to 70% and minimizes billing errors through automation.",
@@ -887,7 +954,7 @@
       }
     ],
     "line1": "Built with Vanilla HTML, CSS & JS.",
-    "line2": "\ufffd 2026 Ruturaj Patil. All rights reserved."
+    "line2": "� 2026 Ruturaj Patil. All rights reserved."
   },
   "certificates": [
     {
@@ -1621,567 +1688,68 @@
         "Caching"
       ]
     },
-    "React": {
-      "name": "React",
-      "category": "Frontend Library",
-      "description": "React is a declarative, efficient, and flexible JavaScript library for building user interfaces.",
+    "Playwright": {
+      "name": "Playwright",
+      "category": "Browser Automation",
+      "description": "Playwright is a modern framework for reliable end-to-end testing and stealth browser automation across web browsers.",
       "features": [
-        "Component-Based",
-        "Virtual DOM",
-        "Declarative UI",
-        "Hooks"
+        "Multi-browser Support",
+        "Auto-wait API",
+        "Network interception",
+        "Stealth evasion support"
       ],
       "useCases": [
-        "Single Page Applications",
-        "Complex Web Apps",
-        "Interactive Dashboards"
+        "Web Scraping",
+        "End-to-End Testing",
+        "Browser Automation"
       ]
     },
-    "NLP": {
-      "name": "NLP (Natural Language Processing)",
+    "Celery": {
+      "name": "Celery",
+      "category": "Task Queue",
+      "description": "Celery is an asynchronous task queue/job queue based on distributed message passing to handle background processing.",
+      "features": [
+        "Asynchronous Execution",
+        "Task Scheduling",
+        "Real-time Processing",
+        "Highly Available"
+      ],
+      "useCases": [
+        "Background Tasks",
+        "Job Scheduling",
+        "Microservices communication"
+      ]
+    },
+    "ML/AI": {
+      "name": "ML/AI",
       "category": "Artificial Intelligence",
-      "description": "Natural language processing is a subfield of linguistics, computer science, and AI concerned with the interactions between computers and human language.",
+      "description": "Machine Learning and Artificial Intelligence algorithms for pattern recognition, prediction, and automation.",
       "features": [
-        "Text Analysis",
-        "Sentiment Analysis",
-        "Entity Recognition",
-        "Language Translation"
+        "Supervised Learning",
+        "Unsupervised Learning",
+        "Neural Networks",
+        "Natural Language Processing"
       ],
       "useCases": [
-        "Chatbots",
-        "Automated Summarization",
-        "Resume Screening",
-        "Voice Assistants"
+        "Predictive Analytics",
+        "Object Detection",
+        "Recommendation Engines"
       ]
     },
-    "OpenAI": {
-      "name": "OpenAI",
-      "category": "AI Research & Deployment",
-      "description": "OpenAI provides highly advanced AI models like GPT-4 and Whisper for complex reasoning and generative tasks.",
+    "LLM APIs": {
+      "name": "LLM APIs",
+      "category": "AI Services",
+      "description": "APIs providing access to Large Language Models (such as OpenAI, Anthropic, Gemini) for processing natural language tasks.",
       "features": [
-        "Generative Text",
-        "Advanced Reasoning",
-        "Speech-to-Text",
-        "Code Generation"
+        "Text Generation",
+        "Sentiment Analysis",
+        "Language Translation",
+        "Semantic Embeddings"
       ],
       "useCases": [
         "Virtual Assistants",
         "Content Generation",
-        "Data Extraction"
-      ]
-    },
-    "Django REST": {
-      "name": "Django REST Framework",
-      "category": "API Framework",
-      "description": "A powerful and flexible toolkit for building Web APIs in Python.",
-      "features": [
-        "Serialization",
-        "Authentication Policies",
-        "ViewSets",
-        "Browsable API"
-      ],
-      "useCases": [
-        "Backend Web Services",
-        "Microservices",
-        "Data Pipelines"
-      ]
-    },
-    "AWS S3": {
-      "name": "Amazon S3",
-      "category": "Cloud Storage",
-      "description": "Amazon Simple Storage Service (Amazon S3) is an object storage service offering industry-leading scalability and security.",
-      "features": [
-        "Object Storage",
-        "High Durability",
-        "Access Control",
-        "Data Lifecycle Management"
-      ],
-      "useCases": [
-        "Media Hosting",
-        "Data Backups",
-        "Static Website Hosting"
-      ]
-    },
-    "Computer Vision": {
-      "name": "Computer Vision",
-      "category": "Artificial Intelligence",
-      "description": "A field of AI that enables computers and systems to derive meaningful information from digital images, videos and other visual inputs.",
-      "features": [
-        "Object Detection",
-        "Facial Recognition",
-        "Image Segmentation",
-        "Pattern Recognition"
-      ],
-      "useCases": [
-        "Autonomous Vehicles",
-        "Medical Imaging",
-        "Security Systems"
-      ]
-    },
-    "Full-Stack Development": {
-      "name": "Full-Stack Development",
-      "category": "Software Engineering",
-      "description": "The practice of developing both the frontend (client-side) and backend (server-side) portions of web applications.",
-      "features": [
-        "End-to-End Architecture",
-        "Database Management",
-        "API Design",
-        "UI Implementation"
-      ],
-      "useCases": [
-        "Web Applications",
-        "SaaS Platforms",
-        "E-commerce Sites"
-      ]
-    },
-    "Python/Django REST APIs": {
-      "name": "Python/Django REST APIs",
-      "category": "Backend Architecture",
-      "description": "Building scalable backend services using Python and the Django REST Framework.",
-      "features": [
-        "Robust Security",
-        "ORM Integration",
-        "Scalability",
-        "Rapid Development"
-      ],
-      "useCases": [
-        "Enterprise Backends",
-        "Mobile App APIs",
-        "Web Services"
-      ]
-    },
-    "AI/ML Integration": {
-      "name": "AI/ML Integration",
-      "category": "Systems Engineering",
-      "description": "The process of embedding artificial intelligence and machine learning models into traditional software applications.",
-      "features": [
-        "Model Deployment",
-        "Inference APIs",
-        "Data Pipelines",
-        "Performance Monitoring"
-      ],
-      "useCases": [
-        "Smart Applications",
-        "Predictive Analytics",
-        "Automated Decision Making"
-      ]
-    },
-    "Cloud Storage Integration": {
-      "name": "Cloud Storage Integration",
-      "category": "Cloud Infrastructure",
-      "description": "Connecting applications to scalable cloud-based object storage services.",
-      "features": [
-        "Secure Uploads",
-        "CDN Distribution",
-        "Scalability",
-        "Backup Solutions"
-      ],
-      "useCases": [
-        "File Sharing Apps",
-        "Media Platforms",
-        "Document Management"
-      ]
-    },
-    "OpenAI API": {
-      "name": "OpenAI API",
-      "category": "AI Services",
-      "description": "Integrating applications directly with OpenAI's massive language models and generative capabilities.",
-      "features": [
-        "Prompt Engineering",
-        "Embeddings",
-        "Fine-tuning",
-        "Semantic Search"
-      ],
-      "useCases": [
-        "AI Chatbots",
-        "Text Generation",
-        "Automated Analysis"
-      ]
-    },
-    "Pinecone / FAISS": {
-      "name": "Vector Databases",
-      "category": "Database Management",
-      "description": "Specialized databases designed to store and quickly query high-dimensional vector embeddings.",
-      "features": [
-        "Similarity Search",
-        "Scalable Indexing",
-        "Real-time Retrieval",
-        "Embedding Storage"
-      ],
-      "useCases": [
-        "Recommendation Engines",
-        "Semantic Search",
-        "RAG Systems"
-      ]
-    },
-    "Java": {
-      "name": "Java",
-      "category": "Programming Language",
-      "description": "A high-level, class-based, object-oriented programming language designed to have as few implementation dependencies as possible.",
-      "features": [
-        "Object-Oriented",
-        "Platform Independent",
-        "Multi-threaded",
-        "Secure"
-      ],
-      "useCases": [
-        "Enterprise Software",
-        "Android Development",
-        "Large-scale Systems"
-      ]
-    },
-    "Android Studio": {
-      "name": "Android Studio",
-      "category": "Development Environment",
-      "description": "The official Integrated Development Environment (IDE) for Android app development.",
-      "features": [
-        "Visual Layout Editor",
-        "APK Analyzer",
-        "Fast Emulator",
-        "Intelligent Code Editor"
-      ],
-      "useCases": [
-        "Mobile App Development",
-        "Android UI Design",
-        "App Profiling"
-      ]
-    },
-    "Firebase": {
-      "name": "Firebase",
-      "category": "Backend-as-a-Service",
-      "description": "A platform developed by Google for creating mobile and web applications with real-time capabilities.",
-      "features": [
-        "Realtime Database",
-        "Authentication",
-        "Cloud Functions",
-        "Hosting"
-      ],
-      "useCases": [
-        "Chat Applications",
-        "Real-time Syncing",
-        "Serverless Apps"
-      ]
-    },
-    "Artificial Intelligence": {
-      "name": "Artificial Intelligence",
-      "category": "Computer Science Field",
-      "description": "The simulation of human intelligence processes by machines, especially computer systems.",
-      "features": [
-        "Learning",
-        "Reasoning",
-        "Self-correction",
-        "Pattern Recognition"
-      ],
-      "useCases": [
-        "Automation",
-        "Predictive Analytics",
-        "Natural Language Processing"
-      ]
-    },
-    "Applied Learning": {
-      "name": "Applied Learning",
-      "category": "Educational Methodology",
-      "description": "An educational approach whereby students learn by engaging in direct application of skills, theories and models.",
-      "features": [
-        "Hands-on Experience",
-        "Real-world Problem Solving",
-        "Practical Application",
-        "Critical Thinking"
-      ],
-      "useCases": [
-        "Internships",
-        "Project-based Learning",
-        "Skill Development"
-      ]
-    },
-    "Project Exposure": {
-      "name": "Project Exposure",
-      "category": "Professional Experience",
-      "description": "Gaining practical experience and insight through direct involvement in real-world professional projects.",
-      "features": [
-        "Industry Standards",
-        "Team Collaboration",
-        "Deadline Management",
-        "Lifecycle Understanding"
-      ],
-      "useCases": [
-        "Career Development",
-        "Portfolio Building",
-        "Skill Demonstration"
-      ]
-    },
-    "Machine Learning": {
-      "name": "Machine Learning",
-      "category": "Artificial Intelligence",
-      "description": "A subset of AI focused on building systems that learn from data and improve their performance over time.",
-      "features": [
-        "Statistical Modeling",
-        "Predictive Analytics",
-        "Algorithmic Training",
-        "Pattern Recognition"
-      ],
-      "useCases": [
-        "Recommendation Systems",
-        "Fraud Detection",
-        "Image Recognition"
-      ]
-    },
-    "Model Building": {
-      "name": "Model Building",
-      "category": "Data Science",
-      "description": "The process of creating a mathematical representation of a real-world process using machine learning algorithms.",
-      "features": [
-        "Algorithm Selection",
-        "Hyperparameter Tuning",
-        "Training",
-        "Validation"
-      ],
-      "useCases": [
-        "Predictive Modeling",
-        "Classification",
-        "Regression Analysis"
-      ]
-    },
-    "Data Analysis": {
-      "name": "Data Analysis",
-      "category": "Data Science",
-      "description": "The process of inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information.",
-      "features": [
-        "Statistical Analysis",
-        "Data Cleaning",
-        "Trend Identification",
-        "Reporting"
-      ],
-      "useCases": [
-        "Business Intelligence",
-        "Market Research",
-        "Performance Tracking"
-      ]
-    },
-    "Programming Fundamentals": {
-      "name": "Programming Fundamentals",
-      "category": "Computer Science",
-      "description": "The foundational concepts and logic required to write effective computer code in any language.",
-      "features": [
-        "Variables & Data Types",
-        "Control Structures",
-        "Functions",
-        "Object-Oriented Concepts"
-      ],
-      "useCases": [
-        "Algorithm Design",
-        "Software Development",
-        "Problem Solving"
-      ]
-    },
-    "Problem Solving": {
-      "name": "Problem Solving",
-      "category": "Soft Skill",
-      "description": "The process of finding solutions to difficult or complex issues through logical analysis and creative thinking.",
-      "features": [
-        "Analytical Thinking",
-        "Debugging",
-        "Algorithmic Logic",
-        "Optimization"
-      ],
-      "useCases": [
-        "Software Debugging",
-        "Architecture Design",
-        "Process Improvement"
-      ]
-    },
-    "HTML": {
-      "name": "HTML",
-      "category": "Markup Language",
-      "description": "The standard markup language for documents designed to be displayed in a web browser.",
-      "features": [
-        "Semantic Structure",
-        "Media Embedding",
-        "Forms",
-        "Accessibility"
-      ],
-      "useCases": [
-        "Web Page Structure",
-        "Email Templates",
-        "UI Frameworks"
-      ]
-    },
-    "CSS": {
-      "name": "CSS",
-      "category": "Styling Language",
-      "description": "A style sheet language used for describing the presentation of a document written in HTML.",
-      "features": [
-        "Layout Control",
-        "Animations",
-        "Responsive Design",
-        "Visual Aesthetics"
-      ],
-      "useCases": [
-        "Website Styling",
-        "UI Component Design",
-        "Theming"
-      ]
-    },
-    "Responsive Web Design": {
-      "name": "Responsive Web Design",
-      "category": "UI/UX Concept",
-      "description": "An approach to web design that makes web pages render well on a variety of devices and window or screen sizes.",
-      "features": [
-        "Fluid Grids",
-        "Flexible Images",
-        "Media Queries",
-        "Mobile-First Strategy"
-      ],
-      "useCases": [
-        "Cross-Device Compatibility",
-        "Mobile Web Browsing",
-        "Accessible UI"
-      ]
-    },
-    "Data Science": {
-      "name": "Data Science",
-      "category": "Field of Study",
-      "description": "An interdisciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge from data.",
-      "features": [
-        "Data Mining",
-        "Statistical Analysis",
-        "Machine Learning",
-        "Data Visualization"
-      ],
-      "useCases": [
-        "Predictive Analytics",
-        "Strategic Planning",
-        "Scientific Research"
-      ]
-    },
-    "Visualization": {
-      "name": "Data Visualization",
-      "category": "Data Science",
-      "description": "The graphical representation of information and data to provide accessible ways to see and understand trends.",
-      "features": [
-        "Charts & Graphs",
-        "Interactive Dashboards",
-        "Visual Storytelling",
-        "Geospatial Mapping"
-      ],
-      "useCases": [
-        "Business Reports",
-        "Analytics Dashboards",
-        "Scientific Presentations"
-      ]
-    },
-    "ML Basics": {
-      "name": "Machine Learning Basics",
-      "category": "Artificial Intelligence",
-      "description": "The foundational algorithms and concepts required to understand and implement basic machine learning models.",
-      "features": [
-        "Linear Regression",
-        "Classification",
-        "Clustering",
-        "Model Evaluation"
-      ],
-      "useCases": [
-        "Introductory AI Projects",
-        "Data Analysis",
-        "Predictive Modeling"
-      ]
-    },
-    "FAISS": {
-      "name": "FAISS",
-      "category": "Database / Vector Search",
-      "description": "Facebook AI Similarity Search (FAISS) is a powerful library for efficient similarity search and clustering of dense vectors.",
-      "features": [
-        "Vector Similarity Search",
-        "High Performance",
-        "GPU Support",
-        "Scalable Indexing"
-      ],
-      "useCases": [
-        "Information Retrieval",
-        "Recommendation Systems",
-        "RAG Applications"
-      ]
-    },
-    "LLM": {
-      "name": "LLM (Large Language Model)",
-      "category": "AI / Machine Learning",
-      "description": "Large Language Models are advanced AI systems designed to understand, generate, and interact with human language at scale.",
-      "features": [
-        "Natural Language Processing",
-        "Contextual Understanding",
-        "Text Generation",
-        "Zero-Shot Learning"
-      ],
-      "useCases": [
-        "Chatbots",
-        "Content Generation",
-        "Code Assistance",
-        "RAG Architecture"
-      ]
-    },
-    "LLMs": {
-      "name": "LLMs (Large Language Models)",
-      "category": "AI / Machine Learning",
-      "description": "Large Language Models are advanced AI systems designed to understand, generate, and interact with human language at scale.",
-      "features": [
-        "Natural Language Processing",
-        "Contextual Understanding",
-        "Text Generation",
-        "Zero-Shot Learning"
-      ],
-      "useCases": [
-        "Chatbots",
-        "Content Generation",
-        "Code Assistance",
-        "RAG Architecture"
-      ]
-    },
-    "RAG": {
-      "name": "RAG (Retrieval-Augmented Generation)",
-      "category": "AI Architecture",
-      "description": "Retrieval-Augmented Generation combines information retrieval with text generation to produce accurate, context-aware responses using external knowledge bases.",
-      "features": [
-        "Contextual Accuracy",
-        "Dynamic Knowledge",
-        "Reduced Hallucination",
-        "Source Attribution"
-      ],
-      "useCases": [
-        "Enterprise Search",
-        "Knowledge Base Assistants",
-        "Educational Tutors"
-      ]
-    },
-    "Speech Recognition": {
-      "name": "Speech Recognition",
-      "category": "AI / Audio Processing",
-      "description": "Speech Recognition technology converts spoken language into text, enabling voice-driven interfaces and real-time audio transcriptions.",
-      "features": [
-        "Audio Processing",
-        "Real-Time Transcription",
-        "Multi-Language Support",
-        "Noise Robustness"
-      ],
-      "useCases": [
-        "Voice Assistants",
-        "Accessibility Tools",
-        "Automated Dictation"
-      ]
-    },
-    "TTS": {
-      "name": "TTS (Text-to-Speech)",
-      "category": "AI / Audio Processing",
-      "description": "Text-to-Speech (TTS) synthesizes natural, human-like speech from text input, enabling applications to communicate audibly.",
-      "features": [
-        "Natural Voice Synthesis",
-        "Prosody Control",
-        "Multiple Voices",
-        "Real-Time Audio Generation"
-      ],
-      "useCases": [
-        "Voice Assistants",
-        "Screen Readers",
-        "Interactive Audio Systems"
+        "Automated Workflows"
       ]
     }
   }

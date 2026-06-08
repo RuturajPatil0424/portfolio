@@ -290,6 +290,34 @@ const techDetails = {
     "description": "Nginx is a web server that can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache.",
     "features": ["High Performance", "Reverse Proxy", "Load Balancing", "SSL Termination"],
     "useCases": ["Web Hosting", "Microservices Routing", "Caching"]
+  },
+  "Playwright": {
+    "name": "Playwright",
+    "category": "Browser Automation",
+    "description": "Playwright is a modern framework for reliable end-to-end testing and stealth browser automation across web browsers.",
+    "features": ["Multi-browser Support", "Auto-wait API", "Network interception", "Stealth evasion support"],
+    "useCases": ["Web Scraping", "End-to-End Testing", "Browser Automation"]
+  },
+  "Celery": {
+    "name": "Celery",
+    "category": "Task Queue",
+    "description": "Celery is an asynchronous task queue/job queue based on distributed message passing to handle background processing.",
+    "features": ["Asynchronous Execution", "Task Scheduling", "Real-time Processing", "Highly Available"],
+    "useCases": ["Background Tasks", "Job Scheduling", "Microservices communication"]
+  },
+  "ML/AI": {
+    "name": "ML/AI",
+    "category": "Artificial Intelligence",
+    "description": "Machine Learning and Artificial Intelligence algorithms for pattern recognition, prediction, and automation.",
+    "features": ["Supervised Learning", "Unsupervised Learning", "Neural Networks", "Natural Language Processing"],
+    "useCases": ["Predictive Analytics", "Object Detection", "Recommendation Engines"]
+  },
+  "LLM APIs": {
+    "name": "LLM APIs",
+    "category": "AI Services",
+    "description": "APIs providing access to Large Language Models (such as OpenAI, Anthropic, Gemini) for processing natural language tasks.",
+    "features": ["Text Generation", "Sentiment Analysis", "Language Translation", "Semantic Embeddings"],
+    "useCases": ["Virtual Assistants", "Content Generation", "Automated Workflows"]
   }
 };
 
