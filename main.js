@@ -226,7 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (projectsSec.visible === false) node.remove();
         else node.outerHTML = sectionWrapper('projects', projectsSec.labelNo || '04.', projectsSec.title || 'Projects', `
           <div class="projects-grid">
-            ${(data.projects || []).map((p) => `
+            ${(data.projects || []).filter((p) => !p.hidden).map((p) => `
               <div class="project-card glass-panel reveal"><div class="project-content">
                 <p class="project-overline">${esc(p.overline || '')}</p>
                 <h3 class="project-title">${esc(p.title || '')}</h3>

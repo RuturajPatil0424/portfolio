@@ -640,6 +640,7 @@ function renderProjectsTab() {
               ${inputField('Overline', `projects.${i}.overline`, p.overline)}
               ${inputField('Title', `projects.${i}.title`, p.title)}
             </div>
+            ${checkboxField('Hidden (hide from live site)', `projects.${i}.hidden`, !!p.hidden)}
             ${textareaField('Description', `projects.${i}.desc`, p.desc)}
             <div class="field-grid-3">
               ${inputField('Role', `projects.${i}.role`, p.role)}

@@ -583,7 +583,8 @@
         "ML/AI",
         "LLM APIs",
         "Celery"
-      ]
+      ],
+      "hidden": true
     },
     {
       "overline": "Live Web App",
@@ -642,7 +643,8 @@
         "React",
         "AI/ML Integration",
         "Cloud Storage Integration"
-      ]
+      ],
+      "hidden": true
     },
     {
       "id": "campusflow-erp",
